@@ -1,7 +1,4 @@
-*.ss~
-*.ss#*
-.#*.ss
-
-*.scm~
-*.scm#*
-.#*.scm
+.idea/
+.DS_Store
+node_modules/
+dist/
