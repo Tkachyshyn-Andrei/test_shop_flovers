@@ -2,5 +2,44 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
 @import "fonts";
 //@include 'btn.scss'
+html {
+  height: 100%;
+}
 
+html, body {
+  font-family: 'MuseoSansCyrl-300', SansSerif, serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
+header {
+
+  flex: 0 0 auto;
+}
+
+main {
+
+  flex: 1 0 auto;
+}
+
+footer {
+
+  flex: 0 0 auto;
+}
+
+.background-header-footer {
+
+  background: #333333;
+  color: #FFFFFF;
+
+}
+
+.border {
+  border-bottom: 1px solid #956D84;
+
+}
+
+.text_grey {
+  color: #828282
+}
