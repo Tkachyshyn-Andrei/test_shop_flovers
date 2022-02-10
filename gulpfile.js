@@ -1,17 +1,19 @@
 const {src, dest, series, watch, parallel} = require('gulp')
-// const scss = require('gulp-sass')
+const scss = require('gulp-sass')(require('sass'))
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
-const cssmin = require('gulp-cssmin');
+// const cssmin = require('gulp-cssmin');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat')
 const connect = require('gulp-connect');
 // const favicons = require('gulp-favicons');
+const fileinclude = require('gulp-file-include');
+
 
 
 const appPath = {
-    // scss: './app/scss/**/*.scss',
-    css: './app/scss/*.scss',
+    scss: './app/scss/style.scss',
+    // css: './app/scss/*.scss',
     js: './app/js/*.js',
     img: [
         './app/img/**/*.jpg',
@@ -34,6 +36,8 @@ const jsPath = [
 ]
 
 
+
+
 function imageMin() {
     return src(appPath.img)
         .pipe(imagemin())
@@ -42,18 +46,28 @@ function imageMin() {
 }
 
 // feature scss
-// function scssCompress() {
-//     return src(appPath.scss)
-//         .pipe(scss({
-//             // outputStyle: 'compressed'
-//         }))
-//         .pipe(dest(destPath.css))
-//         .pipe(connect.reload())
-// }
+function scssCompress() {
+    return src(appPath.scss)
+        .pipe(scss({
+            // outputStyle: 'compressed'
+        }))
+        .pipe(dest(destPath.css))
+        .pipe(connect.reload())
+}
 
 function copyHtml() {
     return src('./app/*.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
         .pipe(dest('./dist/'))
+        .pipe(connect.reload())
+}
+
+function copyFont() {
+    return src('./app/fonts/*.*')
+        .pipe(dest('./dist/fonts'))
         .pipe(connect.reload())
 }
 
@@ -112,12 +126,12 @@ function server() {
 
 
 function watchCode() {
-    watch('app/*.html', copyHtml);
-// watch(appPath.scss, scssCompress);
-    watch(appPath.css, cssMin);
+    watch('app/**/*.html', copyHtml);
+    watch('app/scss/**/*.scss', scssCompress);
+    // watch(appPath.css, cssMin);
     watch(appPath.js, jsMin);
     watch(appPath.img, {events: 'add'}, imageMin);
 }
 
-exports.build = series(copyHtml, imageMin, jsMin, cssMin)
-exports.default = series(copyHtml, imageMin, jsMin, cssMin, parallel(server, watchCode))
+exports.build = series(copyHtml, imageMin, jsMin, scssCompress, copyFont)
+exports.default = series(copyHtml, imageMin, jsMin, scssCompress, copyFont, parallel(server, watchCode))
