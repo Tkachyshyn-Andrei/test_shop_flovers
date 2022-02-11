@@ -2,7 +2,8 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
 @import "fonts";
 @import "card";
-//@include 'btn.scss'
+@import "button";
+
 html {
   height: 100%;
 }
