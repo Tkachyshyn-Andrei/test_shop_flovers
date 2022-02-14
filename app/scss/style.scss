@@ -29,7 +29,13 @@ footer {
 
   flex: 0 0 auto;
 }
-
+.small-items{
+  margin-left: 1em;
+  gap:1em;
+}
+.catalog-item{
+  margin-top: 70px;
+}
 .bg-main-big {
   background: url('./../img/main/bg-for-big-card.jpg') no-repeat;
   height: 550px;
@@ -55,7 +61,7 @@ footer {
 }
 
 .bg-main-size {
-  height: 275px;
+  height: 265px;
   width: 250px;
 
 }
