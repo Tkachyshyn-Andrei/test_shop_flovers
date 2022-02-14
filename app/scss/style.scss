@@ -30,6 +30,37 @@ footer {
   flex: 0 0 auto;
 }
 
+.bg-main-big {
+  background: url('./../img/main/bg-for-big-card.jpg') no-repeat;
+  height: 550px;
+  width: 100%;
+
+}
+
+.bg-main-small-1 {
+  background: url('./../img/main/roses-min-1.jpg') no-repeat;
+}
+
+.bg-main-small-2 {
+  background: url('./../img/main/beautiful-min-2.jpg') no-repeat;
+}
+
+.bg-main-small-3 {
+  background: url('./../img/main/rosess-min-3.jpg') no-repeat;
+}
+
+
+.bg-main-small-4 {
+  background: url('./../img/main/swits-min-4.jpg') no-repeat;
+}
+
+.bg-main-size {
+  height: 275px;
+  width: 250px;
+
+}
+
+
 .background-header-footer {
 
   background: #333333;
