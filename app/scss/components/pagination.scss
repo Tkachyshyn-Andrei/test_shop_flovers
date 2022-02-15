@@ -1,0 +1,44 @@
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  margin: 0 4px;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.pagination a.active {
+  background-color: #D6C5CF;
+  color: white;
+  border: 1px solid #D6C5CF;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.pagination svg{
+  max-height: 24px;
+}
+.pagination .arrow-not-active path{
+  fill: #D6C5CF;
+
+}
+
+.pagination .arrow-active path{
+  max-height: 24px;
+  fill: #956D84;
+}
