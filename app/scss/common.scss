@@ -1,7 +1,19 @@
+img{
+    max-width: 100%;
+}
+
 .border {
     border-bottom: 1px solid #956D84;
 }
 
 .text-grey {
     color: $text-gray
+}
+
+.font-w-700 {
+    font-weight: 700;
+}
+
+.text-white {
+    color: #ffffff;
 }
