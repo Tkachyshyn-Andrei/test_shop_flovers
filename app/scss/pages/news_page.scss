@@ -1,0 +1,10 @@
+.section{
+  max-width: 1470px;
+  margin: 0 auto;
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

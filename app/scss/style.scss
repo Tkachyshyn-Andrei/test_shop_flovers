@@ -4,19 +4,17 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
 
 @import "fonts";
-<<<<<<< HEAD
-@import "card";
-@import "button";
-@import "news_card_item";
-=======
+
 @import "common";
 
 @import "./components/header";
 @import "./components/footer";
+@import "./pages/news_page";
 
 @import "./components/card";
 @import "./components/button";
->>>>>>> main
+@import "./components/news_card_item";
+
 
 html {
     height: 100%;
