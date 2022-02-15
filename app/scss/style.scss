@@ -11,11 +11,10 @@
 
 @import "./components/header";
 @import "./components/footer";
-@import "./pages/news_page";
-
 @import "./components/card";
 @import "./components/button";
 @import "./components/news_card";
+@import "./components/breadcrum";
 @import "./components/pagination";
 @import "./components/map";
 
@@ -36,3 +35,5 @@ main {
 
 //TODO: pages
 @import "index";
+@import "./pages/news";
+@import "./pages/news_page";
