@@ -1,5 +1,7 @@
+//TODO: змінні з (кольори розміри і ТД...)
 @import "variables";
 
+//TODO: бібліотеки ...
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
 
@@ -15,7 +17,7 @@
 @import "./components/button";
 @import "./components/news_card";
 @import "./components/pagination";
-
+@import "./components/map";
 
 html {
     height: 100%;
@@ -34,10 +36,3 @@ main {
 
 //TODO: pages
 @import "index";
-
-//
-//.background-header-footer {
-//    background: #333333;
-//    color: #FFFFFF;
-//}
-
