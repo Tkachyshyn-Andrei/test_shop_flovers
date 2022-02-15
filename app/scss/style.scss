@@ -1,5 +1,7 @@
+//TODO: змінні з (кольори розміри і ТД...)
 @import "variables";
 
+//TODO: бібліотеки ...
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
 
@@ -11,6 +13,7 @@
 
 @import "./components/card";
 @import "./components/button";
+@import "./components/map";
 
 html {
     height: 100%;
