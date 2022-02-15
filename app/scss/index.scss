@@ -1,85 +1,85 @@
 
 .small-items {
-  margin-left: 1em;
-  gap: 1em;
+    margin-left: 1em;
+    gap: 1em;
 }
 
 .catalog-item {
-  margin-top: 70px;
+    margin-top: 70px;
 }
 
 .top-category-bg-big {
-  background: url('./../img/main/bg-for-big-card.jpg') no-repeat center;
-  min-height: 670px;
-  padding-left: 260px;
-  padding-right: 20px;
-  padding-top: 44px;
+    background: url('./../img/main/bg-for-big-card.jpg') no-repeat center;
+    min-height: 670px;
+    padding-left: 260px;
+    padding-right: 20px;
+    padding-top: 44px;
 }
 
 .bg-main-small {
-  &-1 {
-    background: url('./../img/main/roses-min-1.jpg') no-repeat;
-    padding-left: 21px;
-    padding-top: 42px;
+    &-1 {
+        background: url('./../img/main/roses-min-1.jpg') no-repeat;
+        padding-left: 21px;
+        padding-top: 42px;
 
-  }
+    }
 
-  &-2 {
-    background: url('./../img/main/beautiful-min-2.jpg') no-repeat;
-    padding-left: 21px;
-    padding-top: 42px;
-  }
+    &-2 {
+        background: url('./../img/main/beautiful-min-2.jpg') no-repeat;
+        padding-left: 21px;
+        padding-top: 42px;
+    }
 
-  &-3 {
-    background: url('./../img/main/rosess-min-3.jpg') no-repeat;
-    padding-left: 21px;
-    padding-top: 42px;
-  }
+    &-3 {
+        background: url('./../img/main/rosess-min-3.jpg') no-repeat;
+        padding-left: 21px;
+        padding-top: 42px;
+    }
 
 
-  &-4 {
-    background: url('./../img/main/swits-min-4.jpg') no-repeat;
-    padding-left: 21px;
-    padding-top: 42px;
-  }
+    &-4 {
+        background: url('./../img/main/swits-min-4.jpg') no-repeat;
+        padding-left: 21px;
+        padding-top: 42px;
+    }
 }
 
 .top-category-bg-small {
-  min-height: 320px;
-  margin-bottom: 30px;
-  //width: 250px;
+    min-height: 320px;
+    margin-bottom: 30px;
+    //width: 250px;
 }
 
 
 .bg-main-card {
-  color: red;
-  flex: 1 1 100%;
-  min-height: 219px;
-  border: 2px solid #956E84;
-  background-position: center center;
-  background-repeat: no-repeat;
-  //background-size: auto 100%;
+    color: red;
+    flex: 1 1 100%;
+    min-height: 219px;
+    border: 2px solid #956E84;
+    background-position: center center;
+    background-repeat: no-repeat;
+    //background-size: auto 100%;
 
 
-  &-wrapper {
-    column-gap: 20px;
-  }
+    &-wrapper {
+        column-gap: 20px;
+    }
 
-  &-left {
-    background-image: url('./../img/main/photo.svg');
-    background-position: right;
+    &-left {
+        background-image: url('./../img/main/photo.svg');
+        background-position: right;
 
-  }
+    }
 
-  &-center {
-    background-image: url('./../img/main/video.svg');
-  }
+    &-center {
+        background-image: url('./../img/main/video.svg');
+    }
 
-  &-right {
-    background-image: url('./../img/main/present.svg');
-    background-position: left;
+    &-right {
+        background-image: url('./../img/main/present.svg');
+        background-position: left;
 
-  }
+    }
 }
 
 
