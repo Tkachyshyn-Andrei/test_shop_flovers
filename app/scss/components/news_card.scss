@@ -1,6 +1,6 @@
 $brownRed: #956D84;
 
-.flex-item{
+.col{
   padding: 24px;
   color: white;
   background-color: $brownRed;
@@ -8,8 +8,8 @@ $brownRed: #956D84;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  flex: 1 1 calc((100% / 3) - 2rem);
-  &__img-container{
+  max-width: 460px;
+  img-container{
     text-align: center;
     img{
       max-width: 412px;
@@ -32,7 +32,7 @@ $brownRed: #956D84;
     font-weight: 700;
   }
 }
-.flex-item:before{
+.col:before{
   content: "";
   position: absolute;
   top: 0;
@@ -50,5 +50,4 @@ $brownRed: #956D84;
     max-width: 220px;
     margin-bottom: 90px;
   }
-
 }
