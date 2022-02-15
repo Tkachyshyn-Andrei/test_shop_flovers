@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>news</title>
-    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
 @@include('./components/header.html')
 <main>
-    @@include('./components/breadcrum.html')
-    <h1>Новости</h1>
+    <div class="container news_header">
+        @@include('./components/breadcrum.html')
+        <h1>Новости</h1>
+    </div>
     <div class="container">
         <section class="section section-1">
             <div class="row">
@@ -27,7 +29,9 @@
         </section>
 
         <section class="section section-2">
-            @@include('./components/button.html')
+            @@include('./components/button.html',{
+                val:'Еще 16 новостей'
+            })
             @@include('./components/pagination.html')
         </section>
         <section class="section section-3">
