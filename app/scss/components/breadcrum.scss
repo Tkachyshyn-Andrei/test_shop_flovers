@@ -1,5 +1,8 @@
-.breadcrumb ol {
+.breadcrumb ul {
   display: flex;
+  li{
+    list-style: none;
+  }
 }
 
 .breadcrumb li::before {
