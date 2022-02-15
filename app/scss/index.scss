@@ -1,70 +1,78 @@
 
 .small-items {
-    margin-left: 1em;
-    gap: 1em;
+  margin-left: 1em;
+  gap: 1em;
 }
 
 .catalog-item {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
-.bg-main-big {
-    background: url('./../img/main/bg-for-big-card.jpg') no-repeat;
-    height: 550px;
-    width: 100%;
-    
+.top-category-bg-big {
+  background: url('./../img/main/bg-for-big-card.jpg') no-repeat center;
+  min-height: 670px;
+  padding-left: 260px;
+  padding-right: 20px;
+  padding-top: 44px;
 }
+
+.bg-main-small {
+  &-1 {
+    background: url('./../img/main/roses-min-1.jpg') no-repeat;
+
+  }
+
+  &-2 {
+    background: url('./../img/main/beautiful-min-2.jpg') no-repeat;
+  }
+
+  &-3 {
+    background: url('./../img/main/rosess-min-3.jpg') no-repeat;
+  }
+
+
+  &-4 {
+    background: url('./../img/main/swits-min-4.jpg') no-repeat;
+  }
+}
+
+.top-category-bg-small {
+  min-height: 320px;
+  margin-bottom: 30px;
+  //width: 250px;
+}
+
 
 .bg-main-card {
-    color: red;
-    flex: 1 1 100%;
-    min-height: 219px;
-    border: 2px solid #956E84;
-    background-position: center center;
-    background-repeat: no-repeat;
-    //background-size: auto 100%;
-    
-    
-    &-wrapper {
-        column-gap: 20px;
-    }
-    
-    &-left {
-        background-image: url('./../img/main/photo.svg');
-        background-position: right;
-        
-    }
-    
-    &-center {
-        background-image: url('./../img/main/video.svg');
-    }
-    
-    &-right {
-        background-image: url('./../img/main/present.svg');
-        background-position: left;
-        
-    }
-}
+  color: red;
+  flex: 1 1 100%;
+  min-height: 219px;
+  border: 2px solid #956E84;
+  background-position: center center;
+  background-repeat: no-repeat;
+  //background-size: auto 100%;
 
-.bg-main-small-1 {
-    background: url('./../img/main/roses-min-1.jpg') no-repeat;
-}
 
-.bg-main-small-2 {
-    background: url('./../img/main/beautiful-min-2.jpg') no-repeat;
-}
+  &-wrapper {
+    column-gap: 20px;
+  }
 
-.bg-main-small-3 {
-    background: url('./../img/main/rosess-min-3.jpg') no-repeat;
+  &-left {
+    background-image: url('./../img/main/photo.svg');
+    background-position: right;
+
+  }
+
+  &-center {
+    background-image: url('./../img/main/video.svg');
+  }
+
+  &-right {
+    background-image: url('./../img/main/present.svg');
+    background-position: left;
+
+  }
 }
 
 
-.bg-main-small-4 {
-    background: url('./../img/main/swits-min-4.jpg') no-repeat;
-}
 
-.bg-main-size {
-    height: 265px;
-    width: 250px;
-    
-}
