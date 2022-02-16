@@ -5,28 +5,20 @@
 
 .about_us_header h1 {
     font-family: 'MuseoSansCyrl-700', sans-serif;
-    font-style: normal;
     color: $dark-bg;
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
 .about_us {
     p, {
-        font-style: normal;
         font-weight: 250;
         font-size: 16px;
         line-height: 30px;
-        display: flex;
         color: $dark-bg;
-        justify-content: space-between;
         text-align: justify;
     }
-    h1 {
-        font-style: normal;
+    h2 {
         font-weight: 300;
         line-height: 36px;
         color: $brownRed;
@@ -44,13 +36,20 @@
     }
     li, li::marker{
         color: $brownRed;
-        font-style: normal;
         font-weight: 250;
         font-size: 16px;
         line-height: 30px;
+        text-align: justify;
     }
     ul {
-        padding-inline-start: 20px;
+        padding-left: 20px;
+    }
+    .about_us_ol li, li::marker{
+        color: $dark-bg;
+    }
+    ol {
+        color: $dark-bg;
+        padding-left: 20px;
     }
 }
 
