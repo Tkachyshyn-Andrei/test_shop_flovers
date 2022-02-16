@@ -2,29 +2,54 @@
 .product-card {
 
     margin-bottom: 30px;
-    padding: 10px;
     border: 1px solid #956D84;
-    background: white;
     font-family: MuseoSansCyrl-300, serif;
     overflow: hidden;
 
+
     &-img {
-        transition: 1s ease-in-out;
+        background: #FBF9FA;
 
         img {
             display: block;
 
         }
 
-        &:hover {
-            transform: scale(1.1);
-        }
+
     }
+
+    &-tile {
+        //font-weight: 400;
+        position: absolute;
+        margin: 20px;
+        padding: 10px 5px 10px 5px;
+
+        &-discount {
+            border: 1px dashed #E72222;
+            border-radius: 50%;
+            margin-top: 6px;
+        }
+
+        &-heart {
+            margin: 12px 0 10px 180px;
+        }
+
+        &-top {
+            margin: 200px 0 0 180px;
+            background: rgba(157, 117, 140, 0.39);
+            border-radius: 50%;
+            color: #956D84;
+        }
+
+    }
+
 
     &-info {
 
         display: block;
         margin-bottom: 12px;
+        padding: 10px;
+
 
         &-title {
             padding-right: 10px;
@@ -35,6 +60,7 @@
 
 
             }
+
             a:hover {
                 border-bottom: 1px solid #828282;
             }
