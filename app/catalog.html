@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>product_card</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+@@include('./components/header.html')
+@@include('./components/breadcrum.html')
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                
+<!--                <form action="#">-->
+<!--                    <p>-->
+<!--                        <input type="checkbox" id="test1" />-->
+<!--                        <label for="test1">Red</label>-->
+<!--                    </p>-->
+<!--                    <p>-->
+<!--                        <input type="checkbox" id="test2" checked="checked" />-->
+<!--                        <label for="test2">Yellow</label>-->
+<!--                    </p>-->
+<!--                    <p>-->
+<!--                        <input type="checkbox" id="test3" checked="checked"  />-->
+<!--                        <label for="test3">Green</label>-->
+<!--                    </p>-->
+<!--                    <p>-->
+<!--                        <input type="checkbox" id="test4"  checked="checked"  />-->
+<!--                        <label for="test4">Brown</label>-->
+<!--                    </p>-->
+<!--                </form>-->
+            </div>
+            <div class="col-10">
+                    <h1>Акции</h1>
+                    <div class="row">
+                        <div class="col col-3">@@include('./components/product-card.html')</div>
+                        <div class="col col-3">@@include('./components/product-card.html')</div>
+                        <div class="col col-3">@@include('./components/product-card.html')</div>
+                        <div class="col col-3">@@include('./components/product-card.html')</div>
+                        <div class="col col-3">@@include('./components/product-card.html')</div>
+                        <div class="col col-3">@@include('./components/product-card.html')</div>
+                        <div class="col col-3">@@include('./components/product-card.html')</div>
+                        <div class="col col-3">@@include('./components/product-card.html')</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@@include('./components/footer.html')
+<script src="js/script.js"></script>
+</body>
+</html>
