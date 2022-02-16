@@ -58,12 +58,12 @@
 
     li {
         color: $dark-bg;
-    }
 
-    li::before {
-        counter-increment: section;
-        content: "" counter(section) ".  ";
-        padding-left: 20px
+        &::before {
+            counter-increment: section;
+            content: "" counter(section) ".  ";
+            padding-right: 5px;
+        }
     }
 }
 
