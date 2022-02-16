@@ -5,17 +5,19 @@
         font-size: .9rem;
     }
 
-    .comment_body_img {
+    .persone {
+        flex-grow: 1;
+        flex-basis: 200px;
         margin-right: 40px;
+
 
         img {
+            display: block;
             height: 50px;
             min-width: 50px;
+            float: left;
+            margin-right: 40px;
         }
-    }
-
-    .body-name_container {
-        margin-right: 40px;
     }
 
     .name {
@@ -25,7 +27,7 @@
     }
 
     .comment-container {
-        flex-grow: 1;
+        flex-grow: 2;
         flex-basis: 400px;
         margin-right: 20px;
     }
@@ -34,5 +36,19 @@
         color: $text-gray;
         font-weight: 250;
         line-height: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .comment_body {
+        .persone {
+            flex-grow: 1;
+            flex-basis: 70px;
+        }
+
+        .comment-container {
+            flex-grow: 2;
+            flex-basis: 150px;
+        }
     }
 }
