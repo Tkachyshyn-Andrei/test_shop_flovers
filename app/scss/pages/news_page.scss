@@ -46,22 +46,28 @@
 .comment_container {
     border: 1px solid $brownRed;
     max-height: 530px;
-    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 52px 23px 70px 29px;
 
 }
 
 .comment_container::-webkit-scrollbar {
-    width: 10px;
+    width: 27px;
 }
 
 .comment_container::-webkit-scrollbar-thumb {
     background-color: $brownRed;
+    border-top: 52px solid rgba(0, 0, 0, 0);
+    border-right: 17px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+
 }
 
+
 @media (max-width: 991px) {
-    .container_main{
-        img{
+    .container_main {
+        img {
             max-width: 100%;
         }
     }

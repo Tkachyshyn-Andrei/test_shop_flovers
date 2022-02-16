@@ -13,7 +13,7 @@ form{
         padding: 20px 10px 20px 52px;
         display:block;
         width:300px;
-        border:1px solid $brownRed;
+        border:1px solid #E0E0E0;
     }
     textarea{
         resize: none;
@@ -27,8 +27,8 @@ form{
         font-weight:normal;
         position:absolute;
         pointer-events:none;
-        left:5px;
-        top:10px;
+        left:52px;
+        top:20px;
         transition:0.2s ease all;
         -moz-transition:0.2s ease all;
         -webkit-transition:0.2s ease all;
