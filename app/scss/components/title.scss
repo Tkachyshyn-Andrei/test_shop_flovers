@@ -1,0 +1,16 @@
+.title{
+    h2{
+        font-family: 'MuseoSansCyrl', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .title{
+        h2{
+            font-size: 1.5rem;
+            line-height: 25px;
+        }
+    }
+}

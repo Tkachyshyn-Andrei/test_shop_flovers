@@ -1,10 +1,23 @@
 header {
-    a{
-        color: $text-white;
+    .header-bottom {
+        a {
+            color: $text-white;
+        }
     }
-    .background-header{
+
+    .background-header {
         flex: 0 0 auto;
 
         background: $dark-bg;
+    }
+
+    .catalog-item {
+        a {
+            color: #000;
+        }
+
+        a:hover {
+            color: $brownRed
+        }
     }
 }

@@ -1,0 +1,54 @@
+.comment_body {
+    display: flex;
+
+    p {
+        font-size: .9rem;
+    }
+
+    .persone {
+        flex-grow: 1;
+        flex-basis: 200px;
+        margin-right: 40px;
+
+
+        img {
+            display: block;
+            height: 50px;
+            min-width: 50px;
+            float: left;
+            margin-right: 20px;
+        }
+    }
+
+    .name {
+        font-weight: 700;
+        color: $dark-bg;
+        line-height: 18px;
+    }
+
+    .comment-container {
+        flex-grow: 2;
+        flex-basis: 400px;
+        margin-right: 20px;
+    }
+
+    .comment {
+        color: $text-gray;
+        font-weight: 250;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .comment_body {
+        .persone {
+            flex-grow: 1;
+            flex-basis: 70px;
+        }
+
+        .comment-container {
+            flex-grow: 2;
+            flex-basis: 150px;
+        }
+    }
+}
