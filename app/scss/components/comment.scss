@@ -1,0 +1,26 @@
+.comment_body{
+    display: flex;
+    div{
+        width: 120px;
+    }
+    .comment_body_img_container{
+        img{
+            height: 50px;
+            width: 50px;
+        }
+    }
+    p{
+        font-size: .9rem;
+    }
+    .comment_body__comment_body-name{
+        font-weight: 700;
+        color: $dark-bg;
+        line-height: 18px;
+    }
+    .comment_body__comment_body-comment{
+        color: $text-gray;
+        font-weight: 250;
+        line-height: 20px;
+        flex-grow: 3;
+    }
+}

@@ -15,9 +15,29 @@
     h4{
         margin-bottom: 35px;
     }
+    ol{
+        padding-left: 20px;
+    }
     h4,p,li::marker{
         font-size: .9rem;
         line-height: 30px;
         font-weight: 250;
     }
+    ul{
+        padding: 0;
+        list-style: disc;
+        li::marker{
+            color: $brownRed;
+        }
+    }
+    p{
+        padding-bottom: 40px;
+        margin: 0;
+    }
+}
+.comment_container{
+    border: 1px solid $brownRed;
+    max-height: 530px;
+    overflow: scroll;
+    padding: 52px 23px 70px 23px;
 }
