@@ -1,0 +1,48 @@
+form{
+    div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .group 			  {
+        position:relative;
+        margin-bottom:45px;
+    }
+    input, textarea				{
+        font-size:18px;
+        padding: 20px 10px 20px 52px;
+        display:block;
+        width:300px;
+        border:1px solid $brownRed;
+    }
+    textarea{
+        resize: none;
+    }
+    input:focus, textarea:focus		{ outline:none; }
+
+    /* LABEL ======================================= */
+    label 				 {
+        color:#999;
+        font-size:16px;
+        font-weight:normal;
+        position:absolute;
+        pointer-events:none;
+        left:5px;
+        top:10px;
+        transition:0.2s ease all;
+        -moz-transition:0.2s ease all;
+        -webkit-transition:0.2s ease all;
+    }
+
+    /* active state */
+    input:focus ~ label, input:valid ~ label ,textarea:focus ~ label, textarea:valid ~ label		{
+        top:-10px;
+        left: 60px;
+        padding: 0 10px;
+        font-size:14px;
+        color:#BDBDBD;
+        background-color: #fff;
+    }
+
+
+}

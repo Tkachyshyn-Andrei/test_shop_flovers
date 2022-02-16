@@ -1,43 +1,63 @@
-.container_main{
-    img{
+.container_main {
+    img {
         float: left;
         margin-right: 45px;
         margin-bottom: 45px;
         max-width: 580px;
     }
-    h3{
+
+    h3 {
         font-size: 1.34rem;
         font-weight: 250;
         color: $brownRed;
         line-height: 18px;
         margin-bottom: 40px;
     }
-    h4{
+
+    h4 {
         margin-bottom: 35px;
     }
-    ol{
+
+    ol {
         padding-left: 20px;
     }
-    h4,p,li::marker{
+
+    h4, p, li::marker {
         font-size: .9rem;
         line-height: 30px;
         font-weight: 250;
     }
-    ul{
+
+    ul {
         padding: 0;
         list-style: disc;
-        li::marker{
+
+        li::marker {
             color: $brownRed;
         }
     }
-    p{
+
+    p {
         padding-bottom: 40px;
         margin: 0;
     }
 }
-.comment_container{
+
+.comment_container {
     border: 1px solid $brownRed;
     max-height: 530px;
     overflow: scroll;
     padding: 52px 23px 70px 23px;
+
 }
+
+.comment_container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.comment_container::-webkit-scrollbar-thumb {
+    background-color: $brownRed;
+}
+
+
+
