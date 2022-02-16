@@ -8,7 +8,7 @@ const concat = require('gulp-concat')
 const connect = require('gulp-connect');
 const favicons = require('gulp-favicons');
 const fileinclude = require('gulp-file-include');
-
+const htmlmin = require('gulp-htmlmin');
 
 
 const appPath = {
@@ -22,6 +22,7 @@ const appPath = {
     ]
 }
 const destPath = {
+    root: './dist',
     css: './dist/css/',
     js: './dist/js/',
     img: './dist/img/'
@@ -34,8 +35,6 @@ const jsPath = [
     // './node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js',
     './app/js/script.js'
 ]
-
-
 
 
 function imageMin() {
@@ -61,7 +60,8 @@ function copyHtml() {
             prefix: '@@',
             basepath: '@file'
         }))
-        .pipe(dest('./dist/'))
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(dest(destPath.root))
         .pipe(connect.reload())
 }
 
@@ -134,4 +134,4 @@ function watchCode() {
 }
 
 exports.build = series(copyHtml, imageMin, jsMin, scssCompress, copyFont, makeFavicon)
-exports.default = series(copyHtml, imageMin, jsMin, scssCompress, copyFont, makeFavicon, parallel(server, watchCode))
+exports.default = series(copyHtml, imageMin, jsMin, scssCompress, copyFont, parallel(server, watchCode, makeFavicon))

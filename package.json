@@ -20,6 +20,7 @@
   "homepage": "https://github.com/skorovDev/test_shop_flovers#readme",
   "dependencies": {
     "bootstrap": "4.6",
+    "gulp-htmlmin": "^5.0.1",
     "jquery": "^3.6.0",
     "jquery-validation": "^1.19.3",
     "sass": "^1.49.7",
