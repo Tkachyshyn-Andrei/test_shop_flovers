@@ -8,42 +8,44 @@ $brownRed: #956D84;
         background-color: $brownRed;
         position: relative;
         z-index: 1;
+
         img {
             max-width: 100%;
         }
 
+        h3 {
+            font-family: 'MuseoSansCyrl-300', sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            padding-bottom: 28px;
+        }
 
-    h3 {
-        font-family: 'MuseoSansCyrl-300', sans-serif;
-        font-size: 24px;
-        font-weight: 300;
-        padding-bottom: 28px;
+        p {
+            font-family: 'MuseoSansCyrl-250', sans-serif;
+            font-size: 16px;
+            font-weight: 250;
+        }
+
+        a {
+            font-family: 'MuseoSansCyrl-700', serif;
+            color: white;
+            font-weight: 700;
+        }
     }
-
-    p {
-        font-family: 'MuseoSansCyrl-250', sans-serif;
-        font-size: 16px;
-        font-weight: 250;
-    }
-
-    a {
-        color: white;
-        font-weight: 700;
+    .new_card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        height: 150px;
+        width: 100%;
+        z-index: -1;
     }
 }
 
-.new_card:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    height: 150px;
-    width: 100%;
-    z-index: -1;
-}
 
-}
+
 .section-2 {
     display: flex;
     flex-direction: column;
