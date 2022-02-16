@@ -41,8 +41,11 @@
                     display: block;
                     padding-left: 30px;
 
-                    :hover {
+                    &:hover {
                         cursor: pointer;
+                        span:last-child{
+                            text-decoration: underline;
+                        }
                     }
 
 
