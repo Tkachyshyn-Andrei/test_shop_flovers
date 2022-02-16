@@ -1,0 +1,37 @@
+.select {
+    display: flex;
+    padding: 5px 0;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    select {
+        background: url("../img/main/select-arrow.svg") no-repeat;
+        background-position: 100% center;
+
+        /*     -moz-appearance: none; */
+        /*     -webkit-appearance: none; */
+        /*     -webkit-border-radius: 0px; */
+        appearance: none;
+        outline-width: 0;
+        display: block;
+        border: none;
+        font-size: 1rem;
+        text-decoration: underline;
+        padding-right: 20px;
+        color: #333333;
+
+        &:active {
+            background: red;
+        }
+
+        /*     border-bottom: 1px solid #757575; */
+    }
+
+    .select-label {
+        text-align: center;
+        margin: 0 5px 0 0;
+        font-weight: 100;
+    }
+}

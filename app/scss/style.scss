@@ -20,6 +20,7 @@
 @import "./components/comment";
 @import "./components/form-group";
 @import "./components/map";
+@import "./components/select";
 
 html {
     height: 100%;
@@ -41,4 +42,5 @@ main {
 @import "index";
 @import "./pages/news";
 @import "./pages/news_page";
+@import "./pages/catalog";
 @import "./pages/about_us";
