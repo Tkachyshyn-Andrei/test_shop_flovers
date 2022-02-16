@@ -18,6 +18,7 @@
         color: $dark-bg;
         text-align: justify;
     }
+
     h2 {
         font-weight: 300;
         line-height: 36px;
@@ -25,31 +26,46 @@
         margin-top: 60px;
         margin-bottom: 60px;
     }
+
     img {
         width: 580px;
         max-width: 100%;
         margin-top: 25px;
         margin-bottom: 25px;
     }
+
     .about_us_img_center {
-        text-align:center;
+        text-align: center;
     }
-    li, li::marker{
+
+    li, li::marker {
         color: $brownRed;
         font-weight: 250;
         font-size: 16px;
         line-height: 30px;
         text-align: justify;
     }
+
     ul {
         padding-left: 20px;
     }
-    .about_us_ol li, li::marker{
+
+
+}
+
+.about_us_ol {
+    counter-reset: section;
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
         color: $dark-bg;
     }
-    ol {
-        color: $dark-bg;
-        padding-left: 20px;
+
+    li::before {
+        counter-increment: section;
+        content: "" counter(section) ".  ";
+        padding-left: 20px
     }
 }
 
