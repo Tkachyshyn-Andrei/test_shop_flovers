@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>product_card</title>
-    <link href="./css/style.css" rel="stylesheet">
-</head>
+@@include('./components/head.html', {title: 'catalog'})
 <body>
 @@include('./components/header.html')
-@@include('./components/breadcrum.html')
-<section>
+<main class="catalog">
     <div class="container">
+        @@include('./components/breadcrum.html')
+        <div class="d-flex justify-content-center"><h1>Акции</h1></div>
         <div class="row">
-            <div class="col">
-                
-<!--                <form action="#">-->
-<!--                    <p>-->
-<!--                        <input type="checkbox" id="test1" />-->
-<!--                        <label for="test1">Red</label>-->
-<!--                    </p>-->
-<!--                    <p>-->
-<!--                        <input type="checkbox" id="test2" checked="checked" />-->
-<!--                        <label for="test2">Yellow</label>-->
-<!--                    </p>-->
-<!--                    <p>-->
-<!--                        <input type="checkbox" id="test3" checked="checked"  />-->
-<!--                        <label for="test3">Green</label>-->
-<!--                    </p>-->
-<!--                    <p>-->
-<!--                        <input type="checkbox" id="test4"  checked="checked"  />-->
-<!--                        <label for="test4">Brown</label>-->
-<!--                    </p>-->
-<!--                </form>-->
+            <div class="col-2">
+                <div class="catalog-filter">
+
+                    <div class="filter-collapse">
+                        <div class="filter-collapse-title">
+                            <span>Букеты</span>
+
+                        </div>
+                        <div class="filter-collapse-list">
+                            <div class="filter-collapse-list-item">
+                                <input type="checkbox" id="ff">
+                                <label for="ff">
+                                    <span class="arrow"></span>
+                                    <span>text</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="col-10">
-                    <h1>Акции</h1>
-                    <div class="row">
-                        <div class="col col-3">@@include('./components/product-card.html')</div>
-                        <div class="col col-3">@@include('./components/product-card.html')</div>
-                        <div class="col col-3">@@include('./components/product-card.html')</div>
-                        <div class="col col-3">@@include('./components/product-card.html')</div>
-                        <div class="col col-3">@@include('./components/product-card.html')</div>
-                        <div class="col col-3">@@include('./components/product-card.html')</div>
-                        <div class="col col-3">@@include('./components/product-card.html')</div>
-                        <div class="col col-3">@@include('./components/product-card.html')</div>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex"> @@include('./components/select.html',{label:'name'})
+                        @@include('./components/select.html',{label:'name'})
+                        @@include('./components/select.html',{label:'name'})
                     </div>
+                    @@include('./components/select.html',{label:'name'})
+                </div>
+
+                <div class="row">
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                </div>
+
             </div>
+
+
         </div>
     </div>
-</section>
+</main>
 
 
 @@include('./components/footer.html')
