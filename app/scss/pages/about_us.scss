@@ -1,17 +1,17 @@
 .about_us_header {
     margin-top: 60px;
     margin-bottom: 60px;
-}
 
-.about_us_header h1 {
-    font-family: 'MuseoSansCyrl-700', sans-serif;
-    color: $dark-bg;
-    margin-top: 30px;
-    text-align: center;
+    h1 {
+        font-family: 'MuseoSansCyrl-700', sans-serif;
+        color: $dark-bg;
+        margin-top: 30px;
+        text-align: center;
+    }
 }
 
 .about_us {
-    p, {
+    p {
         font-weight: 250;
         font-size: 16px;
         line-height: 30px;
@@ -49,8 +49,6 @@
     ul {
         padding-left: 20px;
     }
-
-
 }
 
 .about_us_ol {
