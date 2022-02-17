@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>basket</title>
-    <link href="../dist/css/style.css" rel="stylesheet">
-</head>
+@@include('./components/head.html', {title: 'basket'})
 <body>
 @@include('./components/header.html')
+<main>
+    <div>
+        @@include('./components/breadcrum.html')
+    </div>
+    <div class="container">
+        <div class="card-basket mb-3">
+            <div class="row align-items-center">
+                <div class="image span-2">
+                    <img src="../img/main/tulips-basket.svg" alt="">
+                </div>
+                <div class="name span-6">
+                    25 желтых тюльпанов
+                </div>
+                <div class="price">
+                   <P>795 ₴</P>
+                    <del>995 ₴</del>
+                </div>
+                <div class="number-input d-flex">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+                <div class="price span-2">
+                    1590 ₴
+                </div>
+                <div class="image-double">
+                    <img class="mr-2" src="../img/main/basket-heart.svg" alt="">
+                    <img src="../img/main/basket.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
 
 @@include('./components/footer.html')

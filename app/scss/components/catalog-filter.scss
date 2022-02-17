@@ -1,0 +1,70 @@
+.catalog {
+    color: #956D84;
+
+    .filter-collapse {
+        &-title {
+            position: relative;
+            padding: 0 15px 0 0;
+
+            ::after {
+                content: "";
+                background-image: url("../img/main/arrow-bt.svg");
+                background-position: 100% center;
+                transform: rotateX(180deg);
+                display: block;
+                width: 15px;
+                height: 7px;
+                position: absolute;
+                right: 0;
+                top: 10px;
+
+            }
+        }
+
+        &-list {
+            &-item {
+                input {
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    opacity: 0;
+                    visibility: hidden;
+
+                    &:checked ~ label .arrow::after {
+                        content: "";
+
+                    }
+                }
+
+                label {
+                    position: relative;
+                    display: block;
+                    padding-left: 30px;
+
+                    &:hover {
+                        cursor: pointer;
+
+                        span:last-child {
+                            text-decoration: underline;
+                        }
+                    }
+
+
+                    .arrow {
+                        position: absolute;
+                        left: 0;
+
+                        &::after {
+                            content: url("../img/main/check.svg");
+
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+
+}
