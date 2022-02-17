@@ -2,14 +2,12 @@ const {src, dest, series, watch, parallel} = require('gulp')
 const scss = require('gulp-sass')(require('sass'))
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
-// const cssmin = require('gulp-cssmin');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat')
 const connect = require('gulp-connect');
 const favicons = require('gulp-favicons');
 const fileinclude = require('gulp-file-include');
 const htmlmin = require('gulp-htmlmin');
-
 
 const appPath = {
     scss: './app/scss/style.scss',
@@ -47,9 +45,11 @@ function imageMin() {
 // feature scss
 function scssCompress() {
     return src(appPath.scss)
+        .pipe(sourcemaps.init())
         .pipe(scss({
-            // outputStyle: 'compressed'
+            outputStyle: 'compressed'
         }))
+        .pipe(sourcemaps.write())
         .pipe(dest(destPath.css))
         .pipe(connect.reload())
 }
@@ -82,12 +82,12 @@ function jsMin() {
 
 }
 
-function cssMin() {
-    return src(appPath.css)
-        .pipe(cssmin())
-        .pipe(dest(destPath.css))
-        .pipe(connect.reload())
-}
+// function cssMin() {
+//     return src(appPath.css)
+//         .pipe(cssmin())
+//         .pipe(dest(destPath.css))
+//         .pipe(connect.reload())
+// }
 
 function server() {
     connect.server({
