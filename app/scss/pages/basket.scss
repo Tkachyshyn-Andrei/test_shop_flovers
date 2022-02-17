@@ -12,8 +12,9 @@
         height: 2rem;
         font-weight: bold;
         text-align: center;
+
         &::-webkit-outer-spin-button,
-        &::-webkit-inner-spin-button{
+        &::-webkit-inner-spin-button {
             -webkit-appearance: none;
             margin: 0;
         }

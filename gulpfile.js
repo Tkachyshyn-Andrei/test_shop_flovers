@@ -134,4 +134,4 @@ function watchCode() {
 }
 
 exports.build = series(copyHtml, imageMin, jsMin, scssCompress, copyFont, makeFavicon)
-exports.default = series(copyHtml, imageMin, jsMin, scssCompress, copyFont, parallel(server, watchCode, makeFavicon))
+exports.default = series(copyHtml, imageMin, jsMin, scssCompress, copyFont, parallel(server, watchCode))
