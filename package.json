@@ -24,7 +24,8 @@
     "jquery": "^3.6.0",
     "jquery-validation": "^1.19.3",
     "sass": "^1.49.7",
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "swiper": "^8.0.6"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

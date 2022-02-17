@@ -4,6 +4,8 @@
 //TODO: бібліотеки ...
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/swiper/modules/navigation/navigation";
 
 @import "fonts";
 
@@ -18,6 +20,7 @@
 @import "./components/pagination";
 @import "./components/h2-title";
 @import "./components/comment";
+@import "./components/review";
 @import "./components/form-group";
 @import "./components/map";
 @import "./components/select";
@@ -47,3 +50,4 @@ main {
 @import "./pages/catalog - discounts";
 @import "./pages/about_us";
 @import "./pages/basket";
+@import "./pages/reviews";

@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>reviews</title>
-    <link href="css/style.css" rel="stylesheet">
-</head>
+@@include('./components/head.html',{
+title:'Отзывы'
+})
+
 <body>
 @@include('./components/header.html')
+<main>
+    <section>
+        <div class="container">
+            @@include('./components/breadcrum.html')
+            @@include('./components/h2-title.html',{
+            text: 'Отзывы'
+            })
+        </div>
+    </section>
+    <section>
+        <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-wrap">
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-wrap">
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-wrap">
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-wrap">
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                                @@include('./components/review.html')
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+        </div>
+    </section>
 
+</main>
 
 @@include('./components/footer.html')
 <script src="js/script.js"></script>
