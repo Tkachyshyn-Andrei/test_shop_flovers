@@ -21,6 +21,7 @@
 @import "./components/form-group";
 @import "./components/map";
 @import "./components/select";
+@import "./components/catalog-filter";
 
 html {
     height: 100%;
@@ -45,3 +46,4 @@ main {
 @import "./pages/news_page";
 @import "./pages/catalog";
 @import "./pages/about_us";
+@import "./pages/basket";
