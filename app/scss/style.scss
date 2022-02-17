@@ -4,6 +4,8 @@
 //TODO: бібліотеки ...
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/swiper/modules/navigation/navigation";
 
 @import "fonts";
 
@@ -18,10 +20,12 @@
 @import "./components/pagination";
 @import "./components/h2-title";
 @import "./components/comment";
+@import "./components/review";
 @import "./components/form-group";
 @import "./components/map";
 @import "./components/select";
 @import "./components/catalog-filter";
+@import "./components/product-card-basket";
 
 html {
     height: 100%;
@@ -44,7 +48,9 @@ main {
 @import "index";
 @import "./pages/news";
 @import "./pages/news_page";
-@import "./pages/catalog";
+@import "./pages/catalog-discounts";
 @import "./pages/about_us";
 @import "./pages/basket";
 @import "./pages/product";
+@import "./pages/payment_and_delivery";
+@import "./pages/reviews";

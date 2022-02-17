@@ -2,14 +2,12 @@ const {src, dest, series, watch, parallel} = require('gulp')
 const scss = require('gulp-sass')(require('sass'))
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
-// const cssmin = require('gulp-cssmin');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat')
 const connect = require('gulp-connect');
 const favicons = require('gulp-favicons');
 const fileinclude = require('gulp-file-include');
 const htmlmin = require('gulp-htmlmin');
-
 
 const appPath = {
     scss: './app/scss/style.scss',
@@ -30,6 +28,7 @@ const destPath = {
 
 const jsPath = [
     './node_modules/jquery/dist/jquery.min.js',
+    './node_modules/swiper/swiper-bundle.min.js',
     // './node_modules/jquery-validation/dist/jquery.validate.min.js',
     // './node_modules/bootstrap/dist/js/bootstrap.min.js',
     // './node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js',
@@ -47,9 +46,11 @@ function imageMin() {
 // feature scss
 function scssCompress() {
     return src(appPath.scss)
+        .pipe(sourcemaps.init())
         .pipe(scss({
-            // outputStyle: 'compressed'
+            outputStyle: 'compressed'
         }))
+        .pipe(sourcemaps.write())
         .pipe(dest(destPath.css))
         .pipe(connect.reload())
 }
@@ -82,12 +83,12 @@ function jsMin() {
 
 }
 
-function cssMin() {
-    return src(appPath.css)
-        .pipe(cssmin())
-        .pipe(dest(destPath.css))
-        .pipe(connect.reload())
-}
+// function cssMin() {
+//     return src(appPath.css)
+//         .pipe(cssmin())
+//         .pipe(dest(destPath.css))
+//         .pipe(connect.reload())
+// }
 
 function server() {
     connect.server({
@@ -134,4 +135,4 @@ function watchCode() {
 }
 
 exports.build = series(copyHtml, imageMin, jsMin, scssCompress, copyFont, makeFavicon)
-exports.default = series(copyHtml, imageMin, jsMin, scssCompress, copyFont, parallel(server, watchCode, makeFavicon))
+exports.default = series(copyHtml, imageMin, jsMin, scssCompress, copyFont, parallel(server, watchCode))
