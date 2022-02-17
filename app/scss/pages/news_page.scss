@@ -1,4 +1,6 @@
 .container_main {
+    line-height: 28px;
+
     img {
         float: left;
         margin-right: 45px;
@@ -10,8 +12,7 @@
         font-size: 1.34rem;
         font-weight: 250;
         color: $brownRed;
-        line-height: 18px;
-        margin-bottom: 40px;
+        margin: 50px 0;
     }
 
     h4 {
@@ -20,26 +21,35 @@
 
     ol {
         padding-left: 20px;
+        list-style-position: inside;
+
+        li {
+            margin-bottom: 40px;
+        }
+
+        ul {
+            padding: 0;
+            list-style: disc inside;
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            li::marker {
+                color: $brownRed;
+            }
+        }
+
     }
 
-    h4, p, li::marker {
+    h4, p, li {
         font-size: .9rem;
         line-height: 30px;
         font-weight: 250;
     }
 
-    ul {
-        padding: 0;
-        list-style: disc;
-
-        li::marker {
-            color: $brownRed;
-        }
-    }
-
     p {
-        padding-bottom: 40px;
-        margin: 0;
+        margin-bottom: 40px;
     }
 }
 
@@ -60,6 +70,7 @@
     background-color: $brownRed;
     border-top: 52px solid rgba(0, 0, 0, 0);
     border-right: 17px solid rgba(0, 0, 0, 0);
+    border-bottom: 70px solid rgba(0, 0, 0, 0);
     background-clip: padding-box;
 
 }
@@ -68,7 +79,11 @@
 @media (max-width: 991px) {
     .container_main {
         img {
+            display: block;
+            margin: 0 auto 45px;
             max-width: 100%;
+            float: none;
+
         }
     }
 }

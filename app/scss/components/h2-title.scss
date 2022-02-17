@@ -1,9 +1,12 @@
 .title {
+    margin-bottom: 90px;
+
     h2 {
         font-family: 'MuseoSansCyrl', sans-serif;
         font-weight: 700;
         font-size: 3rem;
         text-align: center;
+        line-height: 3rem;
     }
 }
 
@@ -11,7 +14,6 @@
     .title {
         h2 {
             font-size: 1.5rem;
-            line-height: 25px;
         }
     }
 }

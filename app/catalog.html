@@ -6,28 +6,13 @@
 <main class="catalog">
     <div class="container">
         @@include('./components/breadcrum.html')
-        <div class="d-flex justify-content-center"><h1>Акции</h1></div>
+        <div class="d-flex justify-content-center"><h1>Каталог товаров</h1></div>
         <div class="row">
             <div class="col-2">
-                <div class="catalog-filter">
-
-                    <div class="filter-collapse">
-                        <div class="filter-collapse-title">
-                            <span>Букеты</span>
-
-                        </div>
-                        <div class="filter-collapse-list">
-                            <div class="filter-collapse-list-item">
-                                <input id="ff" type="checkbox">
-                                <label for="ff">
-                                    <span class="arrow"></span>
-                                    <span>text</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                @@include('./components/catalog-filter.html')
+                @@include('./components/catalog-filter.html')
+                @@include('./components/catalog-filter.html')
+                @@include('./components/catalog-filter.html')
             </div>
             <div class="col-10">
                 <div class="d-flex justify-content-between">

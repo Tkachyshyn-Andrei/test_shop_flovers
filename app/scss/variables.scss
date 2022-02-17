@@ -6,3 +6,22 @@ $text-violet: #956D84;
 
 $font-size: 18px;
 
+//TODO: override bootstrap container width
+
+$grid-gutter-width: 20px  !default;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 680px,
+    md: 980px,
+    lg: 1224px,
+    xl: 1500px
+) !default;
+
+$container-max-widths: (
+    sm: 640px,
+    md: 991px,
+    lg: 1200px,
+    xl: 1440px
+) !default;
+
