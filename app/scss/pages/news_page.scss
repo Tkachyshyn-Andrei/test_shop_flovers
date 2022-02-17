@@ -22,16 +22,19 @@
     ol {
         padding-left: 20px;
         list-style-position: inside;
-        li{
+
+        li {
             margin-bottom: 40px;
         }
+
         ul {
             padding: 0;
             list-style: disc inside;
 
-            li{
+            li {
                 margin-bottom: 10px;
             }
+
             li::marker {
                 color: $brownRed;
             }
@@ -44,7 +47,8 @@
         line-height: 30px;
         font-weight: 250;
     }
-    p{
+
+    p {
         margin-bottom: 40px;
     }
 }
