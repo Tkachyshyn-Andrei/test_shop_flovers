@@ -64,10 +64,33 @@ ol {
     }
 }
 
-.img_payment {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    gap: 20px;
+.payment_img {
+    margin: 32px auto 50px;
+
+    img {
+        margin-right: 10px;
+    }
+
+    @media (max-width: 991px) {
+        img {
+            margin-top: 25px;
+            margin-right: 40px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        img {
+            margin-top: 20px;
+            margin-right: 27px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        text-align: center;
+
+        img {
+            margin-top: 20px;
+            margin-right: 90px;
+        }
+    }
 }
