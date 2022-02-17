@@ -43,19 +43,55 @@
     }
 }
 
+//ol {
+//    counter-reset: section;
+//    list-style-type: none;
+//    padding-left: 0;
+//
+//    li {
+//        margin-top: 30px;
+//        margin-bottom: 30px;
+//
+//        &::before {
+//            counter-increment: section;
+//            content: counters(section,".") ".";
+//            padding-right: 5px;
+//        }
+//    }
+//}
+
+//-----------------------------  2 варіант--------------
 ol {
     counter-reset: section;
     list-style-type: none;
     padding-left: 0;
-
-    li {
-        margin-top: 30px;
-        margin-bottom: 30px;
-
-        &::before {
-            counter-increment: section;
-            content: counters(section,".") ".";
-            padding-right: 5px;
-        }
-    }
 }
+
+li {
+    counter-reset: subsection;
+}
+
+ol > li::before {
+    counter-increment: section;
+    content: "Статья " counter(section) ". ";
+}
+
+ol li li::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) ". ";
+}
+
+//-----------------------------  3 варіант--------------
+
+//ol {
+//    counter-reset: item;
+//}
+//
+//li {
+//    display: block;
+//}
+//
+//li:before {
+//    content: counters(item, ".") ".";
+//    counter-increment: item;
+//}
