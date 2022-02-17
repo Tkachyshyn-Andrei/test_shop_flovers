@@ -262,6 +262,7 @@ function initMap() {
         map,
     });
 }
+
 const swiper = new Swiper('.swiper', {
 
     navigation: {
