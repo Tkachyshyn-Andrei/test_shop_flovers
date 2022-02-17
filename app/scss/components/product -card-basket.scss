@@ -73,11 +73,21 @@
         }
 
         &-actions {
-            padding: 0 30px;
+            padding: 0 25px;
             flex-shrink: 0;
             flex-basis: 110px;
 
-
+            button {
+                padding: 0;
+                height: 27px;
+                width: 26px;
+                background-color: transparent;
+                background-repeat: no-repeat;
+                border: none;
+                cursor: pointer;
+                overflow: hidden;
+                outline: none;
+            }
         }
     }
 }
