@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>product</title>
-    <link href="../dist/css/style.css" rel="stylesheet">
+    @@include('./components/head.html', {title: 'product'})
 </head>
 <body>
 @@include('./components/header.html')
 
+<main class="catalog">
+    <div class="container">
+        @@include('./components/breadcrum.html')
+    </div>
+</main>
 
 @@include('./components/footer.html')
 <script src="js/script.js"></script>
