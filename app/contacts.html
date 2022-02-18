@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>contacts</title>
-    <link href="css/style.css" rel="stylesheet">
-</head>
+@@include('./components/head.html',{
+title: 'Контакти'
+})
 <body>
 @@include('./components/header.html')
-
+<main class="contacts">
+    <div class="container contacts_head">
+        @@include('./components/breadcrum.html')
+        <h1>Контакты</h1>
+    </div>
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row pb-2">
+            <div class="col-12 col-md-6 mb-3 mb-lg-0">
+                <h2>Заполните форму для обратной связи</h2>
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Заполните форму для обратной связи</h2>
+                <div class="col-12 col-md-6">
+                    <div class="form">
+                        @@include('./components/form-group.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            @@include('./components/map.html')
+        </div>
+    </div>
+</main>
 
 @@include('./components/footer.html')
 <script src="js/script.js"></script>
