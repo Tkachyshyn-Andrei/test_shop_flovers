@@ -5,6 +5,8 @@
     h1 {
         font-family: 'MuseoSansCyrl-700', sans-serif;
         color: $dark-bg;
+        font-size: 3rem;
+        line-height: 2.5rem;
         margin-top: 30px;
         text-align: center;
     }
@@ -13,7 +15,7 @@
 .about_us {
     p {
         font-weight: 250;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 30px;
         color: $dark-bg;
         text-align: justify;
@@ -21,7 +23,8 @@
 
     h2 {
         font-weight: 300;
-        line-height: 36px;
+        font-size: 2rem;
+        line-height: 2.5rem;
         color: $brownRed;
         margin-top: 60px;
         margin-bottom: 60px;
@@ -41,7 +44,7 @@
     li, li::marker {
         color: $brownRed;
         font-weight: 250;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 30px;
         text-align: justify;
     }
