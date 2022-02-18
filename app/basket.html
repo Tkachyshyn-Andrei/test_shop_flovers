@@ -8,9 +8,86 @@
         @@include('./components/breadcrum.html')
     </div>
     <div class="container">
+        <div class="mt-5 mb-5 d-flex justify-content-center"> <h1>Корзина</h1></div>
+
         <div class="row">
-            <div class="col-10"> @@include('./components/product -card-basket.html')</div>
-            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="basket-list">
+                    <div class="basket-list-header">
+                        <div class="card-header d-flex align-items-center justify-content-between">
+                            <!--            <div class="d-flex flex-grow-1" >-->
+                            <div class="card-basket-image">
+                            </div>
+                            <div class="text-grey card-basket-name">
+                                Название
+                            </div>
+                            <!--            </div>-->
+                            <div class="d-flex flex-shrink-0  justify-content-end">
+                                <div class="text-grey card-basket-price">
+                                    Цена за шт.
+                                </div>
+                                <div class="text-grey card-basket-quantity d-flex">
+                                    Кол-во
+                                </div>
+                                <div class="text-grey card-basket-amount">
+                                    Итог
+                                </div>
+                                <div class="card-basket-actions">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="basket-list-card">
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+                    <div class="mt-2">  @@include('./components/product-card-basket.html')</div>
+
+                </div>
+
+
+            </div>
+            <div class="col-4">
+                <div class="basket-info">
+                    <div class="basket-info-header d-flex justify-content-end">
+                        <a href="" class="text-grey d-flex">Продолжить покупки
+                            <div class="basket-info-header-arrow d-flex"></div>
+                        </a>
+
+                    </div>
+                    <div class="basket-info-content">
+                        <h2 class="basket-info-content-title">Ваш заказ</h2>
+                        <div class="basket-info-content-product d-flex justify-content-between">
+                            <div class="text-grey"> Товары</div>
+                            5 558 ₴
+                        </div>
+                        <div class="basket-info-content-sells d-flex justify-content-between">
+                            <div class="d-flex text-grey">Скидка</div>
+                            254 ₴
+                        </div>
+                        <div class="basket-info-content-total d-flex justify-content-between">
+                            <h3>Всего</h3>
+                            <h3>5 304 ₴</h3>
+                        </div>
+                        <div class="d-flex basket-info-content-button justify-content-center">
+                            @@include('./components/button.html',{
+                            val: 'Оформить заказа ' })
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 

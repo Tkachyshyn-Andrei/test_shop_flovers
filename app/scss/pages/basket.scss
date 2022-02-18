@@ -1,0 +1,51 @@
+.basket-info {
+
+    &-header {
+        a {
+            border-bottom: 1px solid #ffffff;
+
+            .basket-info-header-arrow {
+                background-image: url("../img/main/arrow-bt.svg");
+                background-position: right;
+                background-repeat: no-repeat;
+                min-height: 20px;
+                min-width: 20px;
+                transform: rotate(-90deg);
+            }
+        }
+
+        a:hover {
+            border-bottom: 1px solid #ccc;
+            color: #BDBDBD;
+        }
+
+    }
+
+    &-content {
+        border: 1px solid #956D84;
+        padding: 60px 70px 30px 70px;
+
+        &-title {
+            color: #956D84;
+            margin-bottom: 70px;
+            font-weight: 700;
+        }
+
+        &-product {
+            margin-bottom: 30px;
+        }
+
+        &-total {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        &-button {
+            button {
+                width: 100%;
+            }
+        }
+
+    }
+
+}
