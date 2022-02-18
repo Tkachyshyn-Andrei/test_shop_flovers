@@ -19,10 +19,6 @@
         line-height: 1.666rem;
         color: $dark-bg;
         text-align: justify;
-
-        &:last-child {
-            margin-top: 30px;
-        }
     }
 
     input {
@@ -98,7 +94,9 @@
 
         ~ .tab-content {
             max-height: 100vh;
-            padding-bottom: 32px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            padding-top: 10px;
         }
     }
 }
