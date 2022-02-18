@@ -1,51 +1,93 @@
-.basket-info {
+.mr-for-basket {
+    margin-top: 90px;
+}
 
-    &-header {
-        a {
-            border-bottom: 1px solid #ffffff;
+.mr-for-basket-footer {
+    margin-top: 140px;
+    margin-bottom: 80px;
+}
 
-            .basket-info-header-arrow {
-                background-image: url("../img/main/arrow-bt.svg");
-                background-position: right;
-                background-repeat: no-repeat;
-                min-height: 20px;
-                min-width: 20px;
-                transform: rotate(-90deg);
-            }
+.basket {
+    &-slider {
+        .slick-next,
+        .slick-prev {
+            top: -75px;
+            right: 15px;
+            left: auto;
+            width: 24px;
+            height: 46px;
+        }
+        .slick-next::before{
+            content: url("../img/main/basket/arrow-slider-r.svg");
+
+        }
+        .slick-prev::before{
+            content: url("../img/main/basket/arrow-slider-l.svg");
         }
 
-        a:hover {
-            border-bottom: 1px solid #ccc;
-            color: #BDBDBD;
+        .slick-prev {
+            right: 45px;
+        }
+
+        .product-card {
+            margin: 0 20px;
+            //padding: 10px;
+        }
+    }
+
+    &-breadcrumb {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    &-info {
+
+        &-header {
+
+            a {
+
+                .basket-info-header-arrow {
+                    background-image: url("../img/main/arrow-bt.svg");
+                    background-position: right;
+                    background-repeat: no-repeat;
+                    min-height: 20px;
+                    min-width: 20px;
+                    transform: rotate(-90deg);
+                }
+            }
+
+            a:hover {
+                color: #BDBDBD;
+            }
+
+        }
+
+        &-content {
+            border: 1px solid #956D84;
+            padding: 60px 70px 30px 70px;
+
+            &-title {
+                color: #956D84;
+                margin-bottom: 70px;
+                font-weight: 700;
+            }
+
+            &-product {
+                margin-bottom: 30px;
+            }
+
+            &-total {
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+
+            &-button {
+                button {
+                    width: 100%;
+                }
+            }
+
         }
 
     }
-
-    &-content {
-        border: 1px solid #956D84;
-        padding: 60px 70px 30px 70px;
-
-        &-title {
-            color: #956D84;
-            margin-bottom: 70px;
-            font-weight: 700;
-        }
-
-        &-product {
-            margin-bottom: 30px;
-        }
-
-        &-total {
-            margin-top: 60px;
-            margin-bottom: 60px;
-        }
-
-        &-button {
-            button {
-                width: 100%;
-            }
-        }
-
-    }
-
 }
