@@ -31,6 +31,9 @@
         position: absolute;
         top: 44px;
         right: 44px;
+        padding: 0;
+        border: none;
+        background: none transparent;
     }
 
     .card-bckgrnd {
@@ -51,6 +54,10 @@
             height: 100%;
             flex: 1 0 30%;
             padding: 16px 6px;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -58,10 +65,14 @@
         max-width: 731px;
 
         .tulip-head {
-            font-size: 0.889rem;
-            font-weight: 250;
-            color: #BDBDBD;
             margin-bottom: 45px;
+
+            a {
+                font-size: 0.889rem;
+                font-weight: 250;
+                color: #BDBDBD;
+                text-decoration: none;
+            }
 
             img {
                 margin-left: 33px;
@@ -82,6 +93,7 @@
                 font-style: normal;
                 font-weight: 300;
                 color: #828282;
+                margin-bottom: 0;
             }
 
             .star {
@@ -139,7 +151,7 @@
 
             .my-counter-quantity {
                 margin-right: 34px;
-                //max-width: 105px;
+                width: 105px;
                 padding: 12px 15px;
                 border: 1px solid #956D84;
 
@@ -211,6 +223,7 @@
                     position: absolute;
                     top: 0;
                     left: 100%;
+                    padding: 20px 40px;
                     border-radius: 0 7px 7px 0;
                     max-height: 100%;
                     width: 190px;
@@ -225,6 +238,9 @@
 
             p {
                 color: #828282;
+                &:hover{
+                    cursor: pointer;
+                }
 
                 img {
                     margin-left: 6px;
@@ -241,12 +257,17 @@
             }
         }
 
-        .about-tulip {
-            font-style: normal;
-            font-weight: 250;
-            font-size: 0.889rem;
-            line-height: 20px;
-            color: #828282;
+        .change-info {
+            p {
+                font-style: normal;
+                font-weight: 250;
+                font-size: 0.889rem;
+                line-height: 20px;
+                color: #828282;
+                &.hide{
+                    display: none;
+                }
+            }
         }
     }
 

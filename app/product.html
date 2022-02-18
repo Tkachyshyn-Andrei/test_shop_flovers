@@ -13,19 +13,20 @@
             <div class="row justify-content-between">
                 <div class="flower d-flex flex-column">
                     <div class="big-img card-bckgrnd">
-                        <img src="img/main/products/tulip.svg" alt="tulip">
+                        <img id="main-foto" src="img/main/products/tulip.svg" alt="tulip">
                         <span class="sale d-flex justify-content-center align-items-center">10%</span>
-                        <img class="heart" src="img/main/products/heart.svg" alt="heart">
+                        <button class="heart"><img src="img/main/products/heart.svg" alt="heart"></button>
                     </div>
                     <div class="row justify-content-center align-items-center little-img">
-                        <div class="card-bckgrnd"><img src="img/main/products/tulip-other.svg" alt="tulip"></div>
-                        <div class="card-bckgrnd d-flex align-items-center"><img src="img/main/products/tulip.svg"
+                        <div class="card-bckgrnd"><img class="mini-foto" src="img/main/products/tulip-other.svg" alt="tulip"></div>
+                        <div class="card-bckgrnd d-flex align-items-center"><img class="mini-foto" src="img/main/products/tulip.svg"
                                                                                  alt="tulip"></div>
-                        <div class="card-bckgrnd"><img src="img/main/products/tulip-other.svg" alt="tulip"></div>
+                        <div class="card-bckgrnd"><img class="mini-foto" src="img/main/products/tulip-other.svg" alt="tulip"></div>
                     </div>
                 </div>
                 <div class="description d-flex flex-column">
-                    <p class="tulip-head">Букеты из тюльпанов<img src="./img/main/products/arrow-right.svg" alt=""></p>
+                    <div class="tulip-head"><a href="#">Букеты из тюльпанов<img
+                        src="./img/main/products/arrow-right.svg" alt="arrow next"></a></div>
                     <h2>25 желтых тюльпанов</h2>
                     <div class="d-flex rating">
                         <p>В наличии</p>
@@ -60,7 +61,7 @@
                         </div>
                     </div>
                     <div class="my-counter d-flex">
-                        <div class="my-counter-quantity d-flex justify-content-center align-items-center">
+                        <div class="my-counter-quantity d-flex justify-content-between align-items-center">
                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
                             <input class="quantity" min="0" name="quantity" type="number" value="1">
                             <button class="plus"
@@ -75,15 +76,37 @@
                         @@include('./components/button.html', { val: 'Быстрый заказ'})
                     </form>
                     <div class="d-flex info">
-                        <p>Доставка <img src="img/main/products/arrow-right.svg" alt=""></p>
-                        <p class="special">Описание <img src="img/main/products/arrow-right.svg" alt=""></p>
-                        <p>Отзывы(12) <img src="img/main/products/arrow-right.svg" alt=""></p>
+                        <p class="p-info delivery">Доставка <img src="img/main/products/arrow-right.svg" alt=""></p>
+                        <p class="p-info about-tulip special">Описание <img src="img/main/products/arrow-right.svg" alt=""></p>
+                        <p class="p-info response">Отзывы(12) <img src="img/main/products/arrow-right.svg" alt=""></p>
                     </div>
-                    <p class="about-tulip">Тюльпан - символ любви, весеннего обновления, счастья, теплой и солнечной погоды и хорошего
+                    <div class="change-info">
+                        <p class="p-change delivery hide">Доставка - самомвывоз, доставка курьером по городу 300 грн. либо любой
+                            транспортной команией за счет получателя Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Adipisci aliquid amet aperiam blanditiis, distinctio incidunt laboriosam sit vel. Ab
+                            animi
+                            ex harum impedit labore odit quisquam rerum similique totam voluptas?</p>
+                        <p class="p-change about-tulip">Тюльпан - символ любви, весеннего обновления, счастья, теплой и солнечной
+                            погоды и хорошего
                             приподнятого настроения! Тюльпан отличается элегантностью форм и изысканностью линий. Если
                             Вы подбираете букет цветов для близкого, дорогого человека, коллеге по работе, то, как
                             нельзя, кстати, придутся нежные чарующие тюльпаны. Преподнося тюльпаны Вы дарите частичку
                             легкого и весеннего настроения!</p>
+                        <p class="p-change response hide">Желтые тюльпаны, вестники разлуки,
+                            Цвета запоздалой утренней звезды,
+                            Утренней звезды.
+                            Желтые тюльпаны помнят твои руки,
+                            Помнят твои губы, строгие цветы,
+                            Строгие цветы.
+                            Желтые тюльпаны помнят твои руки,
+                            Помнят твои губы, строгие цветы, о - у - о,
+                            Строгие цветы, о - у - о, строгие цветы.
+
+                            Ты уедешь скоро, опустеет шумный город,
+                            После нашей ссоры, может прав ты, я не спорю,
+                            В том, что разбились мечты, не виноваты цветы.
+                            Желтые тюльпаны, о - у - о, желтые тюльпаны.</p>
+                    </div>
                 </div>
             </div>
         </div>

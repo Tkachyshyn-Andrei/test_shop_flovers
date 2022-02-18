@@ -304,3 +304,35 @@ $(document).ready(function () {
         ]
     })
 });
+
+//listener for infotext
+(function () {
+    const links = document.getElementsByClassName('p-info');
+    const infos = document.getElementsByClassName('p-change')
+    for (let link of links) {
+        link.addEventListener('click', function () {
+            for (removeClass of links) {
+                removeClass.classList.remove('special')
+            }
+            link.classList.add('special')
+            for (let info of infos) {
+                if (link.classList[1] === info.classList[1]) {
+                    info.classList.remove('hide')
+                } else if (!info.classList.contains('hide'))
+                    info.classList.add('hide')
+            }
+        })
+    }
+})();
+
+//listener for change foto
+(function () {
+    const bigFoto = document.getElementById('main-foto')
+    const miniFotos = document.getElementsByClassName('mini-foto')
+    for (let foto of miniFotos){
+        foto.addEventListener('click', function (){
+            console.log(foto.src)
+            bigFoto.src = foto.src
+        })
+    }
+})();
