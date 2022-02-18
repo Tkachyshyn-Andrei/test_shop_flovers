@@ -99,7 +99,7 @@
 
             h3 {
                 margin-left: 29px;
-                margin-bottom: 0;
+                margin-bottom: -5px;
                 font-weight: 300;
                 font-size: 1.333rem;
                 text-decoration-line: line-through;
@@ -139,7 +139,7 @@
 
             .my-counter-quantity {
                 margin-right: 34px;
-                max-width: 105px;
+                //max-width: 105px;
                 padding: 12px 15px;
                 border: 1px solid #956D84;
 
@@ -164,7 +164,7 @@
                     background-color: transparent;
                     border: none;
                     flex-shrink: 0;
-                    width: 13px;
+                    width: 8px;
                     height: 13px;
                     padding: 0;
 
