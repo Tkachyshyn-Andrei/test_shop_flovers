@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>discounts</title>
-    <link href="../dist/css/style.css" rel="stylesheet">
-</head>
+@@include('./components/head.html', {title: 'catalog'})
 <body>
 @@include('./components/header.html')
+<main class="catalog">
+    <div class="container">
+        @@include('./components/breadcrum.html')
+        <div class="d-flex justify-content-center"><h1>Акції</h1></div>
+        <div class="row">
+            <div class="col-2">
+                @@include('./components/catalog-filter.html')
+                @@include('./components/catalog-filter.html')
+                @@include('./components/catalog-filter.html')
+                @@include('./components/catalog-filter.html')
+            </div>
+            <div class="col-10">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex"> @@include('./components/select.html',{label:'name'})
+                        @@include('./components/select.html',{label:'name'})
+                        @@include('./components/select.html',{label:'name'})
+                    </div>
+                    @@include('./components/select.html',{label:'name'})
+                </div>
+
+                <div class="row">
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                    <div class="col col-3">@@include('./components/product-card.html')</div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</main>
 
 
 @@include('./components/footer.html')
 <script src="js/script.js"></script>
 </body>
+</html>

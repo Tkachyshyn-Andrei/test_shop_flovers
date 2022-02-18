@@ -1,0 +1,83 @@
+.card {
+    &-header {
+
+    }
+
+    &-basket {
+        border: 1px solid #956D84;
+        padding: 25px 0;
+
+        &-image {
+            flex: 0 0 130px;
+            text-align: center;
+            width: 130px;
+        }
+
+        &-name {
+            flex: 1 0 auto;
+            max-width: 350px;
+        }
+
+        &-price {
+            flex-shrink: 0;
+            flex-grow: 0;
+            //flex-basis: 130px;
+            //padding: 0 40px;
+            text-align: center;
+        }
+
+        &-quantity {
+            flex-shrink: 0;
+            flex-grow: 0;
+            flex-basis: 150px;
+            //flex: 1 0 90px;
+            padding: 0 40px;
+
+            input[type=number] {
+                max-width: 2rem;
+                border: none;
+                height: 2rem;
+                font-weight: bold;
+                text-align: center;
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+
+            button {
+                background-image: url("../img/main/arrow-bt.svg");
+                background-repeat: no-repeat;
+                background-position: 100% center;
+                transform: rotate(90deg);
+                background-color: transparent;
+                border: none;
+                width: 1rem;
+                height: 2rem;
+                cursor: pointer;
+                margin: 0;
+                position: relative;
+
+                &.plus {
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+
+
+        &-amount {
+            padding: 0 20px;
+            flex-shrink: 0;
+        }
+
+        &-actions {
+            padding: 0 30px;
+            flex-shrink: 0;
+            flex-basis: 110px;
+
+
+        }
+    }
+}
