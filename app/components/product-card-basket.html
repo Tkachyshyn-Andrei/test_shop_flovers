@@ -11,16 +11,17 @@
             <p>795 ₴</p>
             <del>995 ₴</del>
         </div>
-        <div class="card-basket-quantity d-flex">
-            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
-            <input class="quantity" min="0" name="quantity" type="number" value="1">
-            <button class="plus"
-                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"></button>
+        <div class="card-basket-quantity d-flex align-items-center">
+
+           <div class="card-basket-quantity-border d-flex"> <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+               <input class="quantity" min="0" name="quantity" type="number" value="1">
+               <button class="plus"
+                       onclick="this.parentNode.querySelector('input[type=number]').stepUp()"></button></div>
         </div>
-        <div class="card-basket-amount">
+        <div class="card-basket-amount d-flex align-items-center ">
             1590 ₴
         </div>
-        <div class="card-basket-actions">
+        <div class="card-basket-actions d-flex align-items-center ">
             <button><img alt="" class="mr-2" src="../img/main/basket-heart.svg"></button>
             <button><img alt="" src="../img/main/basket.svg"></button>
         </div>
