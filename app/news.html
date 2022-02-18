@@ -6,12 +6,16 @@ title: 'Новости'
 <body>
 @@include('./components/header.html')
 <main>
-    <div class="container news_header">
-        @@include('./components/breadcrum.html')
-        <h1>Новости</h1>
-    </div>
-    <div class="container">
-        <section class="section section-1">
+    <section class="section">
+        <div class="container">
+            @@include('./components/breadcrum.html')
+            @@include('./components/h2-title.html', {
+            text: 'Новости'
+            })
+        </div>
+    </section>
+    <section class="section">
+        <div class="container pb-5">
             <div class="row">
                 @@include('./components/news_card.html')
                 @@include('./components/news_card.html')
@@ -23,20 +27,23 @@ title: 'Новости'
                 @@include('./components/news_card.html')
                 @@include('./components/news_card.html')
             </div>
-        </section>
-
-        <section class="section section-2">
+        </div>
+        <div class="container news-button text-center">
             @@include('./components/button.html',{
             val:'Еще 16 новостей'
             })
+        </div>
+    </section>
+    <section class="section text-center">
+        <div class="container">
             @@include('./components/pagination.html')
-        </section>
-        <section class="section section-3">
-            <div class="container">
-                @@include('./components/map.html')
-            </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            @@include('./components/map.html')
+        </div>
+    </section>
 </main>
 @@include('./components/footer.html')
 <script src="js/script.js"></script>

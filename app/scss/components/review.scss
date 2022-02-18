@@ -1,5 +1,4 @@
 .review_body {
-    width: calc(24% - 40px);
     display: flex;
     flex-direction: column;
     border: 1px solid $brownRed;
@@ -38,15 +37,15 @@
     }
 }
 
-@media (max-width: 991px) {
-    .review_body {
-        width: calc(50% - 40px);
-    }
-
-}
-@media (max-width: 768px) {
-    .review_body {
-        width: calc(100% - 90px);
-    }
-
-}
+//@media (max-width: 991px) {
+//    .review_body {
+//        width: calc(50% - 40px);
+//    }
+//
+//}
+//@media (max-width: 768px) {
+//    .review_body {
+//        width: calc(100% - 90px);
+//    }
+//
+//}

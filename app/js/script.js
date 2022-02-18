@@ -262,12 +262,46 @@ function initMap() {
         map,
     });
 }
-$(document).ready(function() {
-    $('.slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+
+$(document).ready(function () {
+    $('.review-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        rows:2,
+        responsive: [
+            {
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    rows: 2
+                }
+            },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    rows: 2
+                }
+            },
+            {
+                breakpoint: 1080,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    rows: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    rows: 2
+                }
+            }
+        ]
     })
 });
 
