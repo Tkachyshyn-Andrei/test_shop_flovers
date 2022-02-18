@@ -267,7 +267,7 @@ $(document).ready(function () {
     $('.review-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 4,
-        rows:2,
+        rows: 2,
         responsive: [
             {
                 breakpoint: 1440,
