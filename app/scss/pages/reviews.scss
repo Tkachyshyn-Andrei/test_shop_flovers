@@ -1,17 +1,31 @@
- .slick-next:before {
+.slick-next:before {
     content: url("../img/main/review/arrow-right-slider.svg");
 }
- .slick-prev:before{
-     content: url("../img/main/review/arrow-left-slider.svg");
- }
 
- @media (min-width: 768px) {
-     .slick-next {
-         right: 0;
-     }
-     .slick-prev {
-         left: 0;
-     }
+.slick-prev:before {
+    content: url("../img/main/review/arrow-left-slider.svg");
+}
 
+@media (max-width: 768px) {
 
- }
+    .slick-prev {
+        left: -20px;
+        top: 47%;
+    }
+    .slick-next {
+        right: -17px;
+        top: 47%;
+    }
+}
+
+@media (max-width: 545px) {
+
+    .slick-prev {
+        left: -9px;
+        top: 47%;
+    }
+    .slick-next {
+        right: -3px;
+        top: 47%;
+    }
+}

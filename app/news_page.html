@@ -6,14 +6,17 @@ title:'Как сохранить букет свежим: советы и рек
 <body>
 @@include('./components/header.html')
 <main>
-
     <section class="section">
         <div class="container">
-            @@include('./components/breadcrum.html')
-            @@include('./components/h2-title.html', {
-            text: 'Как сохранить букет свежим: советы и рекомендации'
-            })
+            <div class="container">
+                @@include('./components/breadcrum.html')
+                @@include('./components/h2-title.html', {
+                text: 'Как сохранить букет свежим: советы и рекомендации'
+                })
+            </div>
         </div>
+    </section>
+    <section class="section">
         <div class="container container_main">
             <img alt="image" src="./img/main/news_item/news-item-img.png">
             <div>
@@ -117,14 +120,17 @@ title:'Как сохранить букет свежим: советы и рек
             text: 'Коментарии'
             })
         </div>
+    </section>
+    <section class="section">
+
         <div class="container">
-            <div class="row flex-md-row flex-column-reverse  pb-2">
-                <div class="col-12 col-lg-6">
+            <div class="row flex-column-reverse flex-md-row pb-2">
+                <div class="col-12 col-md-6">
                     <div class="form">
                         @@include('./components/form-group.html')
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                <div class="col-12 col-md-6 mb-3 mb-lg-0">
                     <div class="comment_container">
                         @@include('./components/comment.html')
                         @@include('./components/comment.html')
