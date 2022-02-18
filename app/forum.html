@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Forum</title>
-    <link href="../dist/css/style.css" rel="stylesheet">
-</head>
+@@include('./components/head.html',{
+title: 'Форум'
+})
 <body>
 @@include('./components/header.html')
+<main class="forum">
+    <div class="container forum_head">
+        @@include('./components/breadcrum.html')
+        <h1>Форум</h1>
+    </div>
+    <div class="container">
+        <p> Наша компания заботиться о каждом клиенте и старается постоянно усовершенствоваться. Поэтому согласно закона
+            «Про защиту прав потребителя» если купленный товар вам не подошел по какой - то из причин, имеет заводские
+            дефекты, Вы имеете право вернуть или обменять товар в течении 14 дней с момента его покупки.</p>
+        <div>
+            <div class="accordion_forum">
+                <div class="tab">
+                    <input type="checkbox" id="chck1">
+                    <label class="tab-label" for="chck1">Как купить?</label>
+                    <div class="tab-content">
+                        <p>Вы можете заказать товар через сайт, после чего Вам позвонит наш менеджер и обсудит все детали
+                        заказа,
+                        или сделать заказ по одному из телефонов: (xxx) xxx-xx-xx, (xxx) xxx-xx-xx, время работы в
+                        будние
+                        дни с
+                        9:00 до 18:00, суббота с 10:00 до 16:00.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="chck2">
+                    <label class="tab-label" for="chck2">Доставка и оплата</label>
+                    <div class="tab-content">
+                        <p>Вы можете заказать товар через сайт, после чего Вам позвонит наш менеджер и обсудит все детали
+                        заказа,
+                        или сделать заказ по одному из телефонов: (xxx) xxx-xx-xx, (xxx) xxx-xx-xx, время работы в
+                        будние
+                        дни с
+                        9:00 до 18:00, суббота с 10:00 до 16:00.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="chck3">
+                    <label class="tab-label" for="chck3">О нашем магазине</label>
+                    <div class="tab-content">
+                        <p>Вы можете заказать товар через сайт, после чего Вам позвонит наш менеджер и обсудит все детали
+                        заказа,
+                        или сделать заказ по одному из телефонов: (xxx) xxx-xx-xx, (xxx) xxx-xx-xx, время работы в
+                        будние
+                        дни с
+                        9:00 до 18:00, суббота с 10:00 до 16:00.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p> Купить товар у нас Вы можете, позвоним по одному из наших телефонов или оформить товар купив его через наш
+            магазин, после чего с Вами свяжется наш менеджер и обговорить все детали.</p>
+    </div>
+
+
+    <div class="container mb-5 mt-5">
+        <div class="d-flex justify-content-center">
+            @@include('./components/map.html')
+            <!--                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10243.040319938065!2d27.012364435438762!3d49.40652649877627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1644589419157!5m2!1sru!2sua"-->
+            <!--                        width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
+        </div>
+    </div>
+</main>
 
 
 @@include('./components/footer.html')
