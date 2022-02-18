@@ -14,10 +14,19 @@ del {
     color: $text-gray
 }
 
+.font-w-250 {
+    font-weight: 250;
+}
+
 .font-w-700 {
     font-weight: 700;
 }
 
 .text-white {
     color: #ffffff;
+}
+.section{
+    max-width: 1470px;
+    margin: 0 auto;
+    padding-bottom: 90px;
 }

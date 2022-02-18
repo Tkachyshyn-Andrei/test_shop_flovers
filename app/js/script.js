@@ -262,13 +262,12 @@ function initMap() {
         map,
     });
 }
-
-const swiper = new Swiper('.swiper', {
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    }
+$(document).ready(function() {
+    $('.slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+    })
 });
-
 
