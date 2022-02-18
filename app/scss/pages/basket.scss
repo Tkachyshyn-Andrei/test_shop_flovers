@@ -17,11 +17,13 @@
             width: 24px;
             height: 46px;
         }
-        .slick-next::before{
+
+        .slick-next::before {
             content: url("../img/main/basket/arrow-slider-r.svg");
 
         }
-        .slick-prev::before{
+
+        .slick-prev::before {
             content: url("../img/main/basket/arrow-slider-l.svg");
         }
 
