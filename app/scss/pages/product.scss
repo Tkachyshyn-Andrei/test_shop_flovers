@@ -29,6 +29,24 @@
     }
     .card-bckgrnd{
         background: #FBF9FA;
+        height: 100%;
+        &.col-4{
+            padding: 0;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+    }
+    .little-img{
+        margin: 12px 0 0;
+        column-gap: 9px;
+        .card-bckgrnd{
+            flex: 1 0 30%;
+        }
+       //.col-4{
+       //     padding: 0;
+       // }
     }
     h1{
         font-size: 2.667rem;
