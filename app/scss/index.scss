@@ -21,11 +21,13 @@
         right: 45px;
     }
 
-    .product-card {
-        margin: 20px 20px;
-        //padding: 10px;
+    .slick-list {
+        margin: 0 -10px;
     }
 
+    .slick-slide {
+        padding: 0 10px;
+    }
 }
 
 .small-items {
