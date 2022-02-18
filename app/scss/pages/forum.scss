@@ -1,7 +1,7 @@
 .forum {
     .forum_head {
         margin-top: 60px;
-        margin-bottom: 60px;
+        margin-bottom: 10px;
 
         h1 {
             font-family: 'MuseoSansCyrl-700', sans-serif;
@@ -19,7 +19,8 @@
         line-height: 1.666rem;
         color: $dark-bg;
         text-align: justify;
-        margin-bottom: 2rem;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
         &:last-child {
             margin-top: 30px;
@@ -30,38 +31,43 @@
         background-color: $brownRed;
         color: #FFFFFF;
         cursor: pointer;
-        padding: 18px;
+        padding: 30px 65px;
         width: 100%;
         border: none;
         text-align: left;
         outline: none;
         font-size: 1.5rem;
+        font-weight: bold;
         line-height: 1rem;
         transition: 0.4s;
         margin-bottom: 20px;
     }
 
     .accordion_panel {
-        padding: 0 18px;
         background-color: $text-white;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
+
+        p {
+            margin-top: 10px;
+        }
     }
-}
 
-.active_forum, .accordion_forum:hover {
-    background-color: $bg-accordion-hover;
-}
+    .active_forum, .accordion_forum:hover {
+        background-color: $bg-accordion-hover;
+    }
 
-.accordion_forum:after {
-    content: '\002B';
-    color: $text-white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
+    .accordion_forum:after {
+        content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='12' viewBox='0 0 22 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 0.999996L11 10.1697L21 0.999996' stroke='white' stroke-width='2'/%3e%3c/svg%3e");
+        //display: block;
+        color: $text-white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
 
-.active_forum:after {
-    content: "\2212";
+    .active_forum:after {
+        content: "\2212";
+    }
 }
