@@ -4,3 +4,14 @@
  .slick-prev:before{
      content: url("../img/main/review/arrow-left-slider.svg");
  }
+
+ @media (max-width: 768px) {
+     .slick-next {
+         right: 0;
+     }
+     .slick-prev {
+         left: 0;
+     }
+
+
+ }

@@ -14,7 +14,8 @@
     a {
         position: relative;
     }
-    a:hover{
+
+    a:hover {
         color: $brownRed;
     }
 
@@ -35,4 +36,17 @@
             float: left;
         }
     }
+}
+
+@media (max-width: 991px) {
+    .review_body {
+        width: calc(50% - 40px);
+    }
+
+}
+@media (max-width: 768px) {
+    .review_body {
+        width: calc(100% - 90px);
+    }
+
 }
