@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>product</title>
-    <link href="../dist/css/style.css" rel="stylesheet">
+    @@include('./components/head.html', {title: 'product'})
 </head>
 <body>
 @@include('./components/header.html')
 
+<main class="catalog main-top-margin">
+    <div class="container">
+        @@include('./components/breadcrum.html')
+        <div class="product">
+            <div class="row justify-content-start">
+                <div class="flower d-flex flex-column">
+                    <div class="big-img card-bckgrnd">
+                        <img src="img/main/products/tulip.svg" alt="tulip">
+                        <span class="sale d-flex justify-content-center align-items-center">10%</span>
+                        <img class="heart" src="img/main/products/heart.svg" alt="heart">
+                    </div>
+                    <div class="row justify-content-center align-items-center little-img">
+                        <div class="card-bckgrnd"><img src="img/main/products/tulip-other.svg" alt="tulip"></div>
+                        <div class="card-bckgrnd"><img src="img/main/products/tulip.svg" alt="tulip"></div>
+                        <div class="card-bckgrnd"><img src="img/main/products/tulip-other.svg" alt="tulip"></div>
+                    </div>
+                </div>
+                <div class="col-5"></div>
+            </div>
+        </div>
+        <div class="else">
+            <h1 class="d-flex justify-content-center">Сопутствующие товары</h1>
+            <div class="row">
+                <div class="col col-3">@@include('./components/product-card.html')</div>
+                <div class="col col-3">@@include('./components/product-card.html')</div>
+                <div class="col col-3">@@include('./components/product-card.html')</div>
+                <div class="col col-3">@@include('./components/product-card.html')</div>
+            </div>
+        </div>
+        <div class="you-see">
+            <h1 class="d-flex justify-content-center">Вы просматривали</h1>
+            <div class="row">
+                <div class="col col-3">@@include('./components/product-card.html')</div>
+                <div class="col col-3">@@include('./components/product-card.html')</div>
+                <div class="col col-3">@@include('./components/product-card.html')</div>
+                <div class="col col-3">@@include('./components/product-card.html')</div>
+            </div>
+        </div>
+        <div class="map d-flex justify-content-center">
+            @@include('./components/map.html')
+            <!--                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10243.040319938065!2d27.012364435438762!3d49.40652649877627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1644589419157!5m2!1sru!2sua"-->
+            <!--                        width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
+        </div>
+    </div>
+</main>
 
 @@include('./components/footer.html')
 <script src="js/script.js"></script>
