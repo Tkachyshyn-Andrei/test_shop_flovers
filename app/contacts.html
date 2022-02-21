@@ -38,15 +38,18 @@ title: 'Контакти'
                 <div>
                     <form>
                         @@include('./components/input.html',{
-                        value: 'text',
-                        val:'Ваше имя'
+                        type_value: 'text',
+                        name_value: 'name',
+                        label_val:'Ваше имя'
                         })
                         @@include('./components/input.html',{
-                        value: 'email',
-                        val:'E-Mail адрес'
+                        type_value: 'email',
+                        name_value: 'email',
+                        label_val:'E-Mail адрес'
                         })
                         @@include('./components/textarea.html',{
-                        val:'Ваше сообщение'
+                        name_value: 'textarea',
+                        label_val:'Ваше сообщение'
                         })
                         @@include('./components/button.html',{
                         val:'Отправить'
