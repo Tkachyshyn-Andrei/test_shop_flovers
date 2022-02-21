@@ -2,4 +2,38 @@ footer {
     flex: 0 0 auto;
     background: $dark-bg;
     color: $text-white;
+
+    .border {
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+        .footer_head {
+            & > p {
+                font-weight: 700;
+                line-height: 1rem;
+                margin-bottom: 35px;
+            }
+            a {
+                color: $text-white;
+                font-size: 0.888rem;
+                line-height: 1rem;
+                font-weight: 300;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .footer_pay {
+        margin-bottom: 40px;
+
+        div {
+            font-size: 0.888rem;
+            line-height: 1rem;
+            font-weight: 300;
+        }
+
+        img {
+            margin-right: 20px;
+        }
+    }
 }
