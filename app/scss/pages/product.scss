@@ -516,6 +516,16 @@
             margin-bottom: 53px;
         }
 
+        .big-img {
+            position: relative;
+            padding: 52px 33px;
+        }
+        .little-img{
+            .card-bckgrnd{
+                padding: 4px 16px;
+            }
+        }
+
         .sale {
             top: 11px;
             left: 15px;
@@ -740,12 +750,6 @@
                                 margin-top: 10px;
                             }
                         }
-                        //button {
-                        //    &.button {
-                        //        width: 70%;
-                        //        padding: 20px 40px;
-                        //    }
-                        //}
                     }
                 }
             }
