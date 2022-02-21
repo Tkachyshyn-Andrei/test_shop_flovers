@@ -49,12 +49,12 @@
             a {
 
                 .basket-info-header-arrow {
-                    background-image: url("../img/main/arrow-bt.svg");
+                    background-image: url("../img/main/basket/arrow_basket.svg");
                     background-position: right;
                     background-repeat: no-repeat;
                     min-height: 20px;
                     min-width: 20px;
-                    transform: rotate(-90deg);
+                    transform: rotate(360deg);
                 }
             }
 
