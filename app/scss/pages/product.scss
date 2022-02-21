@@ -34,6 +34,12 @@
         padding: 0;
         border: none;
         background: none transparent;
+        opacity: 0.5;
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 
     .card-bckgrnd {
@@ -54,7 +60,8 @@
             height: 100%;
             flex: 1 0 30%;
             padding: 16px 6px;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
                 transform: scale(1.1);
             }
@@ -71,7 +78,6 @@
                 font-size: 0.889rem;
                 font-weight: 250;
                 color: #BDBDBD;
-                text-decoration: none;
             }
 
             img {
@@ -238,7 +244,8 @@
 
             p {
                 color: #828282;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                 }
 
@@ -264,7 +271,8 @@
                 font-size: 0.889rem;
                 line-height: 20px;
                 color: #828282;
-                &.hide{
+
+                &.hide {
                     display: none;
                 }
             }
@@ -274,15 +282,79 @@
     h1 {
         font-size: 2.667rem;
         color: #333333;
-        margin-bottom: 116px;
+        margin-bottom: 106px;
     }
 
     .else {
         margin-bottom: 117px;
+        .basket-slider {
+
+            .my-card-slider {
+                .product-card {
+                    margin: 0 0;
+                }
+            }
+
+
+            .slick-next,
+            .slick-prev {
+                top: -106px;
+                right: 0px;
+                left: auto;
+                width: 12px;
+                height: 21px;
+            }
+
+            .slick-next::before {
+                content: url("../img/main/basket/arrow-slider-r.svg");
+
+            }
+
+            .slick-prev::before {
+                content: url("../img/main/basket/arrow-slider-l.svg");
+            }
+
+            .slick-prev {
+                right: 43px;
+            }
+
+        }
     }
 
     .you-see {
         margin-bottom: 60px;
+        .basket-slider {
+
+            .my-card-slider {
+                .product-card {
+                    margin: 0 0;
+                }
+            }
+
+
+            .slick-next,
+            .slick-prev {
+                top: -106px;
+                right: 0px;
+                left: auto;
+                width: 12px;
+                height: 21px;
+            }
+
+            .slick-next::before {
+                content: url("../img/main/basket/arrow-slider-r.svg");
+
+            }
+
+            .slick-prev::before {
+                content: url("../img/main/basket/arrow-slider-l.svg");
+            }
+
+            .slick-prev {
+                right: 43px;
+            }
+
+        }
     }
 
     .map {
