@@ -1,24 +1,89 @@
-.adress-container {
+.address-container {
     position: relative;
 
     #map {
         width: 100%;
         height: 600px;
     }
+    #map::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(149, 109, 132, 0.36);
+    }
 
-    .map-addres {
+    .map-address {
         position: absolute;
         top: 0;
         left: 50%;
         height: 100%;
         max-width: 380px;
-        background-color: #fff;
         padding: 70px;
 
-        .map-logo {
-            text-align: center;
+        .map-address-top{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 45%;
+            background-color: #fff;
+            z-index: 1;
+        }
+
+        .map-address-top::after {
+            content: "";
+            position: absolute;
+            bottom: -15%;
+            left: 0;
+            border-top: 41px solid #fff;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            height: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .map-address-bottom{
+            position: absolute;
+            top: 55%;
+            left: 0;
+            width: 100%;
+            height: 45%;
+            background-color: #fff;
+            z-index: 1;
+        }
+
+        .map-address-bottom::before {
+            content: "";
+            position: absolute;
+            top: -15%;
+            left: 0;
+            border-bottom: 41px solid #fff;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            height: 0;
+            width: 100%;
+            z-index: 1;
         }
     }
+
+    .map-address-content {
+        z-index: 2;
+        .map-logo {
+            position: relative;
+            text-align: center;
+            //background-color: #fff;
+            z-index: 2;
+        }
+
+        .map-contacts {
+            position: relative;
+            //background-color: #fff;
+            z-index: 2;
+        }
+    }
+
 
     .phone p::before {
         content: url("../img/main/icons/phone.png");
