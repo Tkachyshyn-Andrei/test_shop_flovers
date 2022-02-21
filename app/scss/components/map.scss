@@ -23,7 +23,7 @@
         max-width: 380px;
         padding: 70px;
         margin-right: 220px;
-        box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.15), 4px 0px 10px rgba(0, 0, 0, 0.15);
+        //box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.15), 4px 0px 10px rgba(0, 0, 0, 0.15);
 
         .map-address-top {
             position: absolute;
@@ -33,6 +33,7 @@
             height: 45%;
             background-color: #fff;
             z-index: 0;
+            box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.15), 4px 0px 10px rgba(0, 0, 0, 0.15);
         }
 
         .map-address-top::after {
@@ -41,21 +42,23 @@
             bottom: -15%;
             left: 0;
             border-top: 41px solid #fff;
-            border-left: 25px solid transparent;
-            border-right: 25px solid transparent;
+            border-left: 25px solid rgba(0, 0, 0, 0.15);
+            border-right: 25px solid rgba(0, 0, 0, 0.15);
             height: 0;
             width: 100%;
             z-index: 0;
+            //filter: drop-shadow(0px 4px 0px rgba(0,0,0,.15));
         }
 
         .map-address-bottom {
             position: absolute;
-            top: 55%;
+            top: 58%;
             left: 0;
             width: 100%;
-            height: 45%;
+            height: 42%;
             background-color: #fff;
             z-index: 0;
+            box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.15), 4px 0px 10px rgba(0, 0, 0, 0.15);
         }
 
         .map-address-bottom::before {
@@ -63,48 +66,49 @@
             position: absolute;
             top: -15%;
             left: 0;
-            border-bottom: 41px solid #fff;
-            border-left: 25px solid transparent;
-            border-right: 25px solid transparent;
+            border-bottom: 38px solid #fff;
+            border-left: 25px solid rgba(0, 0, 0, 0.15);
+            border-right: 25px solid rgba(0, 0, 0, 0.15);
             height: 0;
             width: 100%;
             z-index: 0;
-        }
-    }
-
-    .map-address-content {
-
-        .map-logo {
-            position: relative;
-            text-align: center;
+            //filter: drop-shadow(0px 4px 0px rgba(0,0,0,.5));
         }
 
-        .map-contacts {
-            position: relative;
-            z-index: 2;
+        .map-address-content {
+
+            .map-logo {
+                position: relative;
+                text-align: center;
+            }
+
+            .map-contacts {
+                position: relative;
+                z-index: 2;
+            }
         }
-    }
 
 
-    .phone p::before {
-        content: url("../img/main/icons/phone.png");
-        height: 20px;
-        width: 20px;
-        padding-right: 10px;
-    }
+        .phone p::before {
+            content: url("../img/main/icons/phone.png");
+            height: 20px;
+            width: 20px;
+            padding-right: 10px;
+        }
 
-    .skype p::before {
-        content: url("../img/main/icons/skype-light.svg");
-        height: 20px;
-        width: 20px;
-        padding-right: 10px;
-    }
+        .skype p::before {
+            content: url("../img/main/icons/skype-light.svg");
+            height: 20px;
+            width: 20px;
+            padding-right: 10px;
+        }
 
-    .email p::before {
-        content: url("../img/main/icons/email.svg");
-        height: 20px;
-        width: 20px;
-        padding-right: 10px;
+        .email p::before {
+            content: url("../img/main/icons/email.svg");
+            height: 20px;
+            width: 20px;
+            padding-right: 10px;
+        }
     }
 }
 
@@ -178,7 +182,7 @@
             }
 
             .map-address-bottom::before {
-                border-bottom: 28px solid #fff;
+                border-bottom: 26px solid #fff;
             }
         }
 
@@ -189,8 +193,8 @@
             }
         }
     }
-
 }
+
 
 
 
