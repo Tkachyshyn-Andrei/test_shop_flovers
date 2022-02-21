@@ -19,10 +19,18 @@ title: 'Контакти'
                     maecenas accumsan lacus vel facilisis.
                 </p>
                 <div class="our_contacts">
-                    <p class="contact_location">м. Київ, вулиця Оболонська Набережна, 7, корпус 5</p>
-                    <p class="contact_phone">+380 99 937 1556</p>
-                    <p class="contact_clock">Пн - Пт: 09:00 - 20:00 <br>Сб - Вс 09:00 - 15:00
-                    </p>
+                    <div class="d-flex align-items-center">
+                        <img alt="location" src="./img/main/contacts/location.svg">
+                        <p>м. Київ, вулиця Оболонська Набережна, 7, корпус 5</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img alt="phone" src="./img/main/contacts/phone.svg">
+                        <p>+380 99 937 1556</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img alt="clock" src="./img/main/contacts/clock.svg">
+                        <p>Пн - Пт: 09:00 - 20:00 <br>Сб - Вс 09:00 - 15:00-</p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 col-12">
@@ -30,12 +38,14 @@ title: 'Контакти'
                 <div>
                     <form>
                         @@include('./components/input.html',{
+                        value: 'text',
                         val:'Ваше имя'
                         })
                         @@include('./components/input.html',{
+                        value: 'email',
                         val:'E-Mail адрес'
                         })
-                        @@include('./components/input.html',{
+                        @@include('./components/textarea.html',{
                         val:'Ваше сообщение'
                         })
                         @@include('./components/button.html',{
