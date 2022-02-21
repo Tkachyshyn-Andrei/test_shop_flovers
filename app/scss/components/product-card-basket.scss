@@ -55,10 +55,10 @@
                 }
 
                 button {
-                    background-image: url("../img/main/arrow-bt.svg");
+                    background-image: url("../img/main/basket/arrow_basket.svg");
                     background-repeat: no-repeat;
                     background-position: 100% center;
-                    transform: rotate(90deg);
+                    transform: rotate(180deg);
                     background-color: transparent;
                     border: none;
                     width: 1rem;
@@ -68,7 +68,8 @@
                     position: relative;
 
                     &.plus {
-                        transform: rotate(-90deg);
+                        transform: rotate(360deg);
+
                     }
                 }
 
