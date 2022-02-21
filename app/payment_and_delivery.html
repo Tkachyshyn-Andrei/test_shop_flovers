@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Payment and delivery</title>
-    <link href="css/style.css" rel="stylesheet">
-</head>
+@@include('./components/head.html',{
+title: 'Оплата и доставка'
+})
 <body>
 @@include('./components/header.html')
 
@@ -32,32 +29,12 @@
         <p> Доставка заказов оплаченных после 18:00 по киевскому времени, при условии ранней доставки на следующий день,
             может быть перенесена на более позднее время по согласованию с заказчиком.</p>
         <p> Вы можете оплатить товар:</p>
-        <div class="row img_payment d-flex">
-            <div>
-                <a href="#">
-                    <img alt="Privat" src="./img/main/payment_delivery/privat_payment.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img alt="Visa" src="./img/main/payment_delivery/visa_payment.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img alt="Master_Card" src="./img/main/payment_delivery/master_card_payment.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img alt="Portmone" src="./img/main/payment_delivery/portmone_payment.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <img alt="Yandex" src="./img/main/payment_delivery/yandex_payment.jpg">
-                </a>
-            </div>
+        <div class="payment_img">
+            <img alt="Privat" src="./img/main/payment_delivery/privat_payment.jpg">
+            <img alt="Visa" src="./img/main/payment_delivery/visa_payment.jpg">
+            <img alt="Master_Card" src="./img/main/payment_delivery/master_card_payment.jpg">
+            <img alt="Portmone" src="./img/main/payment_delivery/portmone_payment.jpg">
+            <img alt="Yandex" src="./img/main/payment_delivery/yandex_payment.jpg">
         </div>
         <p> «Приват24» – самый популярный Интернет-банк Украины.
             Наличными оплата производится предварительно перед фактом доставки наличными курьеру. Стоимость услуги
@@ -212,12 +189,8 @@
         <p>Адрес в сети Интернет - flowers-ukraine.com</p>
     </div>
 
-    <div class="container mb-5 mt-5">
-        <div class="d-flex justify-content-center">
+    <div class="container">
             @@include('./components/map.html')
-            <!--                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10243.040319938065!2d27.012364435438762!3d49.40652649877627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1644589419157!5m2!1sru!2sua"-->
-            <!--                        width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
-        </div>
     </div>
 </main>
 

@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>contacts</title>
-    <link href="css/style.css" rel="stylesheet">
-</head>
+@@include('./components/head.html',{
+title: 'Контакти'
+})
 <body>
 @@include('./components/header.html')
-
+<main class="contacts">
+    <div class="container contacts_head">
+        @@include('./components/breadcrum.html')
+        <h1>Контакты</h1>
+    </div>
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row pb-2">
+            <div class="contact_us col-md-6 col-12">
+                <h2>Свяжитесь с нами</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                    maecenas accumsan lacus vel facilisis.
+                </p>
+                <div class="our_contacts">
+                    <p class="contact_location">м. Київ, вулиця Оболонська Набережна, 7, корпус 5</p>
+                    <p class="contact_phone">+380 99 937 1556</p>
+                    <p class="contact_clock">Пн - Пт: 09:00 - 20:00 <br>Сб - Вс 09:00 - 15:00
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <h2>Заполните форму для обратной связи</h2>
+                <div>
+                    <form>
+                        @@include('./components/input.html',{
+                        val:'Ваше имя'
+                        })
+                        @@include('./components/input.html',{
+                        val:'E-Mail адрес'
+                        })
+                        @@include('./components/input.html',{
+                        val:'Ваше сообщение'
+                        })
+                        @@include('./components/button.html',{
+                        val:'Отправить'
+                        })
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        @@include('./components/map.html')
+    </div>
+</main>
 
 @@include('./components/footer.html')
 <script src="js/script.js"></script>

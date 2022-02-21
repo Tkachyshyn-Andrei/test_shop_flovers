@@ -14,6 +14,11 @@ del {
     color: $text-gray
 }
 
+//TODO: check
+.font-w-250 {
+    font-weight: 250;
+}
+
 .font-w-700 {
     font-weight: 700;
 }
@@ -21,12 +26,19 @@ del {
 .text-white {
     color: #ffffff;
 }
+.text-center{
+    text-align: center;
+}
 
-.main-top-margin{
+.section {
+    padding-bottom: 90px;
+}
+
+.main-top-margin {
     margin-top: 65px;
 }
 
-.breadcrumb{
+.breadcrumb {
     padding-inline-start: 0;
     padding-left: 0;
 }

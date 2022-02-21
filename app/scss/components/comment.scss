@@ -43,7 +43,7 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1221px) {
     .comment_body {
         .persone {
             flex-grow: 1;
@@ -52,7 +52,7 @@
 
         .comment-container {
             flex-grow: 2;
-            flex-basis: 150px;
+            flex-basis: 100px;
         }
     }
 }

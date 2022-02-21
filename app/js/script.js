@@ -261,15 +261,48 @@ function initMap() {
         position: center,
         map,
     });
-};
+}
 
-const swiper = new Swiper('.swiper', {
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    }
-});
+// $(document).ready(function () {
+$('.review-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    rows: 2,
+    responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                rows: 2
+            }
+        },
+        {
+            breakpoint: 1280,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                rows: 2
+            }
+        },
+        {
+            breakpoint: 1080,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                rows: 2
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                rows: 2
+            }
+        }
+    ]
+})
 
 $('.basket-slider').slick({
     dots: true,
@@ -304,7 +337,50 @@ $('.basket-slider').slick({
 
     ]
 });
+$('.index-slider').slick({
+    dots: true,
+    // infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    rows: 2,
 
+    responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                rows: 2
+            }
+        },
+        {
+            breakpoint: 1280,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                rows: 2
+            }
+        },
+        {
+            breakpoint: 1080,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                rows: 2
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                rows: 2
+            }
+        }
+
+    ]
+});
 //listener for infotext
 (function () {
     const links = document.getElementsByClassName('p-info');
@@ -329,8 +405,8 @@ $('.basket-slider').slick({
 (function () {
     const bigFoto = document.getElementById('main-foto')
     const miniFotos = document.getElementsByClassName('mini-foto')
-    for (let foto of miniFotos){
-        foto.addEventListener('click', function (){
+    for (let foto of miniFotos) {
+        foto.addEventListener('click', function () {
             console.log(foto.src)
             bigFoto.src = foto.src
         })

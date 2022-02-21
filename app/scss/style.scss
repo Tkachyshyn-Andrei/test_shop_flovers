@@ -4,8 +4,8 @@
 //TODO: бібліотеки ...
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
-@import "../../node_modules/swiper/swiper";
-@import "../../node_modules/swiper/modules/navigation/navigation";
+@import "../../node_modules/slick-slider/slick/slick";
+@import "../../node_modules/slick-slider/slick/slick-theme";
 
 @import "fonts";
 
@@ -24,8 +24,10 @@
 @import "./components/form-group";
 @import "./components/map";
 @import "./components/select";
+@import "./components/slick-slider";
 @import "./components/catalog-filter";
 @import "./components/product-card-basket";
+@import "./components/input";
 
 html {
     height: 100%;
@@ -53,5 +55,7 @@ main {
 @import "./pages/basket";
 @import "./pages/payment_and_delivery";
 @import "./pages/reviews";
+@import "./pages/forum";
 @import "./pages/product";
+@import "./pages/contacts";
 

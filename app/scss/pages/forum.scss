@@ -1,0 +1,109 @@
+.forum {
+    .forum_head {
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        h1 {
+            font-weight: 700;
+            color: $dark-bg;
+            font-size: 3rem;
+            line-height: 2.5rem;
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+
+    p {
+        font-weight: 250;
+        font-size: 1rem;
+        line-height: 1.666rem;
+        color: $dark-bg;
+        text-align: justify;
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .accordion_forum {
+        overflow: hidden;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .tab {
+        width: 100%;
+        color: white;
+        overflow: hidden;
+
+        &-label {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 65px;
+            font-size: 1.333rem;
+            line-height: 1rem;
+            background: $brownRed;
+            font-weight: 700;
+            cursor: pointer;
+            margin-bottom: 20px;
+            /* Icon */
+            &:hover {
+                background: darken($brownRed, 10%);
+            }
+
+            &::after {
+                content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='12' viewBox='0 0 22 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 0.999996L11 10.1697L21 0.999996' stroke='white' stroke-width='2'/%3e%3c/svg%3e");
+                transition: all .35s;
+            }
+        }
+
+        &-content {
+            font-weight: 250;
+            font-size: 1rem;
+            line-height: 1.666rem;
+            color: $dark-bg;
+            text-align: justify;
+            max-height: 0;
+            transition: all .35s;
+        }
+
+        &-close {
+            display: flex;
+            justify-content: flex-end;
+            padding: 1em;
+            font-size: 0.75em;
+            background: $brownRed;
+            cursor: pointer;
+
+            &:hover {
+                background: darken($brownRed, 10%);
+            }
+        }
+    }
+
+    input:checked {
+        + .tab-label {
+            background: darken($brownRed, 10%);
+
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+
+        ~ .tab-content {
+            max-height: 100vh;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            padding-top: 10px;
+        }
+    }
+
+    #map {
+        margin-top: 85px;
+        margin-bottom: 85px;
+    }
+}
+
+
