@@ -412,3 +412,21 @@ $('.index-slider').slick({
         })
     }
 })();
+
+const plusMinusBtn = $('.card-basket-quantity button')
+
+plusMinusBtn.click(function () {
+    const input = $(this).parent().find('input.quantity')
+    const btnClass = $(this).attr('class')
+
+    if (btnClass === 'plus') {
+        input.val(+input.val() + 1)
+    } else if (btnClass === 'minus') {
+        input.val(+input.val() - 1 > 0 ? +input.val() - 1 : 1)
+    }
+    const price = $(this).parents('.card-basket').find('p[data-price]').attr('data-price')
+    const quantity = input.val()
+    const amount = price * quantity
+
+    $(this).parents('.card-basket').find('.card-basket-amount').text(`${amount} ₴`)
+})
