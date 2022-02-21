@@ -1,11 +1,13 @@
 .address-container {
     position: relative;
 
+
     #map {
         width: 100%;
         height: 600px;
     }
-    #map::after{
+
+    #map::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -16,19 +18,21 @@
     .map-address {
         position: absolute;
         top: 0;
-        left: 50%;
+        right: 0;
         height: 100%;
         max-width: 380px;
         padding: 70px;
+        margin-right: 220px;
+        box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.15), 4px 0px 10px rgba(0, 0, 0, 0.15);
 
-        .map-address-top{
+        .map-address-top {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 45%;
             background-color: #fff;
-            z-index: 1;
+            z-index: 0;
         }
 
         .map-address-top::after {
@@ -41,17 +45,17 @@
             border-right: 25px solid transparent;
             height: 0;
             width: 100%;
-            z-index: 1;
+            z-index: 0;
         }
 
-        .map-address-bottom{
+        .map-address-bottom {
             position: absolute;
             top: 55%;
             left: 0;
             width: 100%;
             height: 45%;
             background-color: #fff;
-            z-index: 1;
+            z-index: 0;
         }
 
         .map-address-bottom::before {
@@ -64,22 +68,19 @@
             border-right: 25px solid transparent;
             height: 0;
             width: 100%;
-            z-index: 1;
+            z-index: 0;
         }
     }
 
     .map-address-content {
-        z-index: 2;
+
         .map-logo {
             position: relative;
             text-align: center;
-            //background-color: #fff;
-            z-index: 2;
         }
 
         .map-contacts {
             position: relative;
-            //background-color: #fff;
             z-index: 2;
         }
     }
@@ -105,6 +106,90 @@
         width: 20px;
         padding-right: 10px;
     }
+}
+
+@media (max-width: 992px) {
+
+    .address-container {
+        font-size: 16px;
+
+        .map-address {
+            width: calc(100% - 40px);
+            max-width: inherit;
+            margin: 171px 20px 0;
+            height: auto;
+
+            .map-address-top::after {
+                border-top: 35px solid #fff;
+            }
+
+            .map-address-bottom::before {
+                border-bottom: 35px solid #fff;
+            }
+        }
+
+        .phone {
+            p {
+                padding-right: 14px;
+            }
+
+            p::before {
+                position: absolute;
+                left: -26px;
+            }
+        }
+
+        .skype {
+            p {
+                padding-right: 14px;
+            }
+
+            p::before {
+                position: absolute;
+                left: -26px;
+            }
+        }
+
+        .email {
+            p {
+                padding-right: 14px;
+            }
+
+            p::before {
+                position: absolute;
+                left: -26px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .address-container {
+        font-size: 12px;
+        margin-bottom: 90px;
+
+        .map-address {
+            top: 70px;
+            padding: 20px 70px;
+
+            .map-address-top::after {
+                border-top: 28px solid #fff;
+            }
+
+            .map-address-bottom::before {
+                border-bottom: 28px solid #fff;
+            }
+        }
+
+        .phone {
+            p::before {
+                position: absolute;
+                left: -20px;
+            }
+        }
+    }
+
 }
 
 
