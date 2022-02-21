@@ -1,0 +1,30 @@
+.slick-next,
+.slick-prev {
+    top: -75px;
+    right: -4px;
+    left: auto;
+    width: 24px;
+    height: 46px;
+}
+
+.slick-next::before {
+    content: url("../img/main/basket/arrow-slider-r.svg");
+
+
+}
+
+.slick-prev::before {
+    content: url("../img/main/basket/arrow-slider-l.svg");
+}
+
+.slick-prev {
+    right: 35px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+.slick-slide {
+    padding: 0 10px;
+}

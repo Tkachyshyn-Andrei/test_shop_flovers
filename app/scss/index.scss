@@ -2,7 +2,7 @@
     .slick-next,
     .slick-prev {
         top: -75px;
-        right: 15px;
+        right: -4px;
         left: auto;
         width: 24px;
         height: 46px;
@@ -11,6 +11,7 @@
     .slick-next::before {
         content: url("../img/main/basket/arrow-slider-r.svg");
 
+
     }
 
     .slick-prev::before {
@@ -18,7 +19,7 @@
     }
 
     .slick-prev {
-        right: 45px;
+        right: 35px;
     }
 
     .slick-list {
