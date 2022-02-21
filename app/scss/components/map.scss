@@ -42,12 +42,11 @@
             bottom: -15%;
             left: 0;
             border-top: 41px solid #fff;
-            border-left: 25px solid rgba(0, 0, 0, 0.15);
-            border-right: 25px solid rgba(0, 0, 0, 0.15);
+            border-left: 25px solid rgba(0, 0, 0, 0.05);
+            border-right: 25px solid rgba(0, 0, 0, 0.05);
             height: 0;
             width: 100%;
             z-index: 0;
-            //filter: drop-shadow(0px 4px 0px rgba(0,0,0,.15));
         }
 
         .map-address-bottom {
@@ -67,8 +66,8 @@
             top: -15%;
             left: 0;
             border-bottom: 38px solid #fff;
-            border-left: 25px solid rgba(0, 0, 0, 0.15);
-            border-right: 25px solid rgba(0, 0, 0, 0.15);
+            border-left: 25px solid rgba(0, 0, 0, 0.05);
+            border-right: 25px solid rgba(0, 0, 0, 0.05);
             height: 0;
             width: 100%;
             z-index: 0;
@@ -116,6 +115,7 @@
 
     .address-container {
         font-size: 16px;
+        margin-bottom: 90px;
 
         .map-address {
             width: calc(100% - 40px);
@@ -128,7 +128,7 @@
             }
 
             .map-address-bottom::before {
-                border-bottom: 35px solid #fff;
+                border-bottom: 32px solid #fff;
             }
         }
 
