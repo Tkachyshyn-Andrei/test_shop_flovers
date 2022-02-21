@@ -287,40 +287,73 @@
 
     .else {
         margin-bottom: 117px;
+        .basket-slider {
+
+            .my-card-slider {
+                .product-card {
+                    margin: 0 0;
+                }
+            }
+
+
+            .slick-next,
+            .slick-prev {
+                top: -116px;
+                right: 0px;
+                left: auto;
+                width: 12px;
+                height: 21px;
+            }
+
+            .slick-next::before {
+                content: url("../img/main/basket/arrow-slider-r.svg");
+
+            }
+
+            .slick-prev::before {
+                content: url("../img/main/basket/arrow-slider-l.svg");
+            }
+
+            .slick-prev {
+                right: 43px;
+            }
+
+        }
     }
 
     .you-see {
         margin-bottom: 60px;
+        .basket-slider {
 
-        .basket {
-            &-slider {
-                .slick-next,
-                .slick-prev {
-                    top: -75px;
-                    right: 12px;
-                    left: auto;
-                    width: 24px;
-                    height: 46px;
-                }
-
-                .slick-next::before {
-                    content: url("../img/main/basket/arrow-slider-r.svg");
-
-                }
-
-                .slick-prev::before {
-                    content: url("../img/main/basket/arrow-slider-l.svg");
-                }
-
-                .slick-prev {
-                    right: 45px;
-                }
-
+            .my-card-slider {
                 .product-card {
-                    margin: 0 20px;
-                    //padding: 10px;
+                    margin: 0 0;
                 }
             }
+
+
+            .slick-next,
+            .slick-prev {
+                top: -116px;
+                right: 0px;
+                left: auto;
+                width: 12px;
+                height: 21px;
+            }
+
+            .slick-next::before {
+                content: url("../img/main/basket/arrow-slider-r.svg");
+
+            }
+
+            .slick-prev::before {
+                content: url("../img/main/basket/arrow-slider-l.svg");
+            }
+
+            .slick-prev {
+                right: 43px;
+            }
+
         }
     }
 
