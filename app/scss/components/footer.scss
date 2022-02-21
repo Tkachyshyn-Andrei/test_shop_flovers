@@ -8,17 +8,32 @@ footer {
         margin-bottom: 15px;
 
         .footer_head {
+            margin-bottom: 35px;
+
             & > p {
-                font-weight: 700;
+                font-weight: 900;
                 line-height: 1rem;
                 margin-bottom: 35px;
             }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    font-size: 0.888rem;
+                    line-height: 1rem;
+                    font-weight: 300;
+
+                    &:not(:last-child) {
+                        margin-bottom: 22px;
+                    }
+                }
+            }
+
             a {
                 color: $text-white;
-                font-size: 0.888rem;
-                line-height: 1rem;
-                font-weight: 300;
-                margin-bottom: 30px;
             }
         }
     }
@@ -30,10 +45,6 @@ footer {
             font-size: 0.888rem;
             line-height: 1rem;
             font-weight: 300;
-        }
-
-        img {
-            margin-right: 20px;
         }
     }
 }
