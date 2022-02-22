@@ -481,3 +481,9 @@ plusMinusBtn.click(function () {
     basketAmount -= sells
     $('span.finish-price').text(basketAmount)
 })
+
+$(function () {
+    $("#phone").one('focus', function () {
+        $(this).val("+380")
+    });
+});
