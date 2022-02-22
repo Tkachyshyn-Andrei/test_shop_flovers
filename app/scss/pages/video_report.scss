@@ -9,82 +9,39 @@
         font-size: 2.667rem;
         margin-bottom: 90px;
     }
-    .delivery-photos-slider{
+    .my-card-slider{
+        padding: 0 10px;
+        max-width: 359px;
+        flex-shrink: 1;
+        flex-basis: 25%;
+    }
 
-        .slick-next,
-        .slick-prev {
-            top: 101.5%;
-            right: 15%;
-            left: auto;
-            width: 18px;
-            height: 30px;
-            z-index: 4;
-        }
+    .pagination{
+        margin-top: 46px;
 
-        .slick-next::before {
-            content: url("../img/main/basket/arrow-slider-r.svg");
+    }
 
-        }
-
-        .slick-prev::before {
-            content: url("../img/main/basket/arrow-slider-l.svg");
-        }
-
-        .slick-prev {
-            left: 15%;
-            right: auto;
-        }
-        .slick-dots{
-            li{
-                margin: 0 44px;
-                button{
-                    border: 0;
-                    background: transparent;
-                    display: block;
-                    height: 20px;
-                    width: 20px;
-                    outline: none;
-                    line-height: 1.333rem;
-                    font-size: 1.333rem;
-                    color: #B0B9C0;
-                    padding: 5px;
-                }
-                &.slick-active{
-                    button{
-                        color: #FFFFFF;
-                        &:after{
-                            position: absolute;
-                            top: -10px;
-                            left: -17px;
-                            content: "";
-                            width: 55.71px;
-                            height: 55.71px;
-                            background: #D6C5CF;
-                            border-radius: 4px;
-                            z-index: -1;
-
-                        }
-                    }
-                }
-            }
-        }
+    .hiden-button{
+        display: none;
     }
 
     .map{
         margin-bottom: 85px;
-        margin-top: 233px;
+        margin-top: 106px;
+    }
+}
+@media (max-width: 979px){
+    .delivery-photos{
+        .my-card-slider{
+            flex-basis: 33%;
+        }
     }
 }
 
 @media (max-width: 679px) {
     .delivery-photos{
-        .delivery-photos-slider{
-            .slick-next{
-                right: 5%;
-            }
-            .slick-prev{
-                left: 5%;
-            }
+        .my-card-slider{
+            flex-basis: 50%;
         }
     }
 }
@@ -99,6 +56,7 @@
             margin-top: 29px;
         }
         .delivery-photos-slider{
+
             .slick-next{
                 top: 101%;
                 right: 0;
@@ -142,5 +100,38 @@
                 }
             }
         }
+
+
+        .hiden-button{
+            display: block;
+            width: 100%;
+            margin-top: 67px;
+            margin-bottom: 59px;
+            .button{
+                width: 100%;
+            }
+        }
+        .pagination{
+            a{
+
+                    margin: 0 0px;
+                    padding: 3px 6px;
+                svg{
+                    max-height: 18px;
+                }
+
+            }
+        }
     }
+}
+@media (max-width: 460px){
+    .delivery-photos{
+        .my-card-slider{
+            flex-basis: 100%;
+            &.hide{
+                display: none;
+            }
+        }
+    }
+
 }
