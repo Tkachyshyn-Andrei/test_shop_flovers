@@ -1,14 +1,46 @@
 header {
-    .header-bottom {
+    .header-top {
+        flex: 0 0 auto;
+        background: $dark-bg;
         a {
             color: $text-white;
         }
-    }
+        select{
+            font-size: 0.9rem;
+            font-weight: 300;
+            background-color: $dark-bg;
+            border: none;
+            color: $text-violet;
+            max-width: 72px;
+            cursor: pointer;
+        }
 
-    .background-header {
-        flex: 0 0 auto;
+        .bookmarks::before{
+            content: url("../img/header/bookmarks.svg");
+            position: absolute;
+            left: -25px;
+        }
+        .delivery-block::before{
+            content: url("../img/header/truck.svg");
+            position: absolute;
+            left: -25px;
+        }
+        .contact-block::before{
+            content: url("../img/header/phone-header.png");
+            position: absolute;
+            left: -25px;
+            top: 2px;
+        }
+        .enter::before{
+            content: url("../img/header/enter.svg");
+            position: absolute;
+            left: -15px;
+        }
+        .registration{
+            border-left: 1px solid $text-violet;
+            padding-left: 10px;
+        }
 
-        background: $dark-bg;
     }
 
     .catalog-item {
@@ -18,6 +50,36 @@ header {
 
         a:hover {
             color: $brownRed
+        }
+    }
+}
+@media (max-width: 991px) {
+    .city-block, .bookmarks, .contact-block, .entries-block{
+        display: none !important;
+    }
+    .currency-block{
+        order: 1;
+        border-right: 1px solid $text-violet;
+        margin-right: 20px;
+        a{
+            display: none;
+        }
+    }
+    .delivery-block{
+        order: 2;
+        padding: 0;
+        &::before{
+            bottom: 0;
+            top: -2px;
+            left: -28px;
+        }
+    }
+    .languages-block{
+        order: 3;
+        border-left: 1px solid $text-violet;
+        padding-left: 10px;
+        a{
+            display: none;
         }
     }
 }

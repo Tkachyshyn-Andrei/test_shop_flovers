@@ -381,6 +381,43 @@ $('.index-slider').slick({
 
     ]
 });
+
+$('.product-slider').slick({
+    dots: true,
+    // infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: false,
+                dots: true,
+            }
+        },
+        // {
+        //     breakpoint: 480,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         slidesToScroll: 1
+        //     }
+        // }
+
+    ]
+});
+
 //listener for infotext
 (function () {
     const links = document.getElementsByClassName('p-info');
@@ -429,4 +466,24 @@ plusMinusBtn.click(function () {
     const amount = price * quantity
 
     $(this).parents('.card-basket').find('.card-basket-amount').text(`${amount} ₴`)
+    $(this).parents('.card-basket').find('.card-basket-amount').attr('data-amount', amount)
+
+    let basketAmount = 0
+    $('.card-basket').each(function () {
+        const amount = $(this).find('.card-basket-amount').attr('data-amount')
+        basketAmount += +amount
+
+
+    });
+
+    $('.basket-info-content-product-total').text(`${basketAmount} ₴`)
+    const sells = $('span.content-sells').text()
+    basketAmount -= sells
+    $('span.finish-price').text(basketAmount)
 })
+
+$(function () {
+    $("#phone").one('focus', function () {
+        $(this).val("+380")
+    });
+});
