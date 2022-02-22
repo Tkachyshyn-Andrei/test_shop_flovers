@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Video report</title>
-    <link href="css/style.css" rel="stylesheet">
+    @@include('./components/head.html', {title: 'video report'})
 </head>
 <body>
 @@include('./components/header.html')
 
+<main class="delivery-photos">
+    <div class="container">
+        @@include('./components/breadcrum.html')
+        <h1 class="d-flex justify-content-center">Видео отчеты</h1>
+        <div class="delivery-photos-slider">
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="container map">
+        @@include('./components/map.html')
+    </div>
+</main>
 
 @@include('./components/footer.html')
 <script src="js/script.js"></script>
