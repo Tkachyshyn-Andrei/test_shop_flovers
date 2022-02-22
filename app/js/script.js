@@ -429,4 +429,12 @@ plusMinusBtn.click(function () {
     const amount = price * quantity
 
     $(this).parents('.card-basket').find('.card-basket-amount').text(`${amount} ₴`)
+    $(this).parents('.card-basket').find('.card-basket-amount').attr('data-amount', amount)
+
+    let basketAmount = 0
+    $('.card-basket').each(function () {
+        const amount = $(this).find('.card-basket-amount').attr('data-amount')
+        basketAmount += +amount
+    });
+
 })
