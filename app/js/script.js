@@ -472,6 +472,12 @@ plusMinusBtn.click(function () {
     $('.card-basket').each(function () {
         const amount = $(this).find('.card-basket-amount').attr('data-amount')
         basketAmount += +amount
+
+
     });
 
+    $('.basket-info-content-product-total').text(`${basketAmount} ₴`)
+    const sells = $('span.content-sells').text()
+    basketAmount -= sells
+    $('span.finish-price').text(basketAmount)
 })
