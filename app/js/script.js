@@ -449,3 +449,9 @@ $('.product-slider').slick({
         })
     }
 })();
+
+$(function () {
+    $("#phone").one('focus', function () {
+        $(this).val("+380")
+    });
+});
