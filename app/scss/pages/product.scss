@@ -20,6 +20,10 @@
     .big-img {
         position: relative;
         padding: 105px 67px;
+        height: 580px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .sale {
@@ -378,6 +382,14 @@
 
     .map {
         margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 1499px) {
+    .catalog{
+        .flower{
+            height: auto;
+        }
     }
 }
 
