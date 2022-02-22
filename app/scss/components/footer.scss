@@ -7,10 +7,19 @@ footer {
         margin-top: 30px;
         margin-bottom: 15px;
 
-        .footer_head {
+        .header_footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             margin-bottom: 35px;
 
-            & > p {
+            input {
+                position: absolute;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            label {
                 font-weight: 900;
                 line-height: 1rem;
                 margin-bottom: 35px;
@@ -40,11 +49,131 @@ footer {
 
     .footer_pay {
         margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
 
         div {
             font-size: 0.888rem;
             line-height: 1rem;
             font-weight: 300;
+        }
+
+        .payment_methods {
+            margin-right: 38px;
+        }
+
+        .pay_img {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-left: auto;
+
+            .footer_payment_img {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 979px) {
+    .header_footer {
+        flex-direction: column !important;
+
+        .footer_logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 53px;
+        }
+
+        label {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+    }
+
+    .footer_tab {
+        width: 100%;
+        overflow: hidden;
+
+        &-label {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem;
+            cursor: pointer;
+            /* Icon */
+
+            &::after {
+                content: "\276F";
+                width: 1em;
+                height: 1em;
+                text-align: center;
+                transition: all .35s;
+            }
+        }
+
+        &-content {
+            max-height: 0;
+            padding: 0 1em;
+            transition: all .35s;
+        }
+
+        &-close {
+            display: flex;
+            justify-content: flex-end;
+            padding: 1em;
+            font-size: 0.75em;
+            cursor: pointer;
+
+        }
+    }
+
+    // :checked
+    input:checked {
+        + .footer_tab-label {
+            &::after {
+                transform: rotate(90deg);
+            }
+        }
+
+        ~ .footer_tab-content {
+            max-height: 100vh;
+            padding: 1em;
+        }
+    }
+
+    .border {
+        border-bottom: none;
+    }
+
+    .footer_pay {
+        flex-direction: column-reverse !important;
+        align-items: start !important;
+        margin-bottom: 18px !important;
+        padding: 0 18px;
+
+        .pay_img {
+            margin-bottom: 35px !important;
+            margin-left: 0 !important;
+
+            .footer_payment_img {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            img {
+                margin-right: 30px !important;
+                margin-bottom: 30px;
+            }
+        }
+
+        .payment_methods {
+            display: none;
         }
     }
 }
