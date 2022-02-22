@@ -1,0 +1,44 @@
+.delivery-photos-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 339px;
+    max-height: 494px;
+    padding: 0 6px 25px;
+    margin-bottom: 23px;
+    background: linear-gradient(to bottom, #FFFFFF 29%, #956D84 29%);
+    .delivery-content{
+        max-height: 343px;
+        background: transparent;
+        margin-bottom: 17px;
+        * {
+            height: 100%;
+        }
+    }
+    .data{
+        font-style: normal;
+        font-weight: 250;
+        font-size: 0.889rem;
+        color: #FFFFFF;
+        margin-left: 10px;
+        align-self: start;
+        margin-bottom: 19px;
+    }
+    h3{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.333rem;
+        color: #FFFFFF;
+        margin-bottom: 29px;
+    }
+    .buy-now{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.889rem;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+
+}

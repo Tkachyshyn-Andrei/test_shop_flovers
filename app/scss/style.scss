@@ -28,6 +28,7 @@
 @import "./components/catalog-filter";
 @import "./components/product-card-basket";
 @import "./components/input";
+@import "./components/delivery-photos-card";
 
 html {
     height: 100%;
@@ -69,4 +70,6 @@ main {
 @import "./pages/forum";
 @import "./pages/product";
 @import "./pages/contacts";
+@import "./pages/delivery_photos";
+@import "./pages/video_report";
 
