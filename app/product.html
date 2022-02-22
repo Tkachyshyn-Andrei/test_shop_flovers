@@ -10,7 +10,7 @@
     <div class="container">
         @@include('./components/breadcrum.html')
         <div class="product">
-            <div class="row justify-content-between">
+            <div class="row product-info justify-content-between">
                 <div class="flower d-flex flex-column">
                     <div class="big-img card-bckgrnd">
                         <img id="main-foto" src="img/main/products/tulip.svg" alt="tulip">
@@ -18,29 +18,34 @@
                         <button class="heart"><img src="img/main/products/heart.svg" alt="heart"></button>
                     </div>
                     <div class="row justify-content-center align-items-center little-img">
-                        <div class="card-bckgrnd"><img class="mini-foto" src="img/main/products/tulip-other.svg" alt="tulip"></div>
-                        <div class="card-bckgrnd d-flex align-items-center"><img class="mini-foto" src="img/main/products/tulip.svg"
+                        <div class="card-bckgrnd"><img class="mini-foto" src="img/main/products/tulip-other.svg"
+                                                       alt="tulip"></div>
+                        <div class="card-bckgrnd d-flex align-items-center"><img class="mini-foto"
+                                                                                 src="img/main/products/tulip.svg"
                                                                                  alt="tulip"></div>
-                        <div class="card-bckgrnd"><img class="mini-foto" src="img/main/products/tulip-other.svg" alt="tulip"></div>
+                        <div class="card-bckgrnd"><img class="mini-foto" src="img/main/products/tulip-other.svg"
+                                                       alt="tulip"></div>
                     </div>
                 </div>
                 <div class="description d-flex flex-column">
                     <div class="tulip-head"><a href="#">Букеты из тюльпанов<img
                         src="./img/main/products/arrow-right.svg" alt="arrow next"></a></div>
                     <h2>25 желтых тюльпанов</h2>
-                    <div class="d-flex rating">
-                        <p>В наличии</p>
-                        <div class="star">
-                            <img src="img/main/star.svg" alt="star">
-                            <img src="img/main/star.svg" alt="star">
-                            <img src="img/main/star.svg" alt="star">
-                            <img src="img/main/star.svg" alt="star">
-                            <img src="img/main/star.svg" alt="star">
+                    <div class="for-small-resolution">
+                        <div class="d-flex rating">
+                            <p>В наличии</p>
+                            <div class="star">
+                                <img src="img/main/star.svg" alt="star">
+                                <img src="img/main/star.svg" alt="star">
+                                <img src="img/main/star.svg" alt="star">
+                                <img src="img/main/star.svg" alt="star">
+                                <img src="img/main/star.svg" alt="star">
+                            </div>
                         </div>
-                    </div>
-                    <div class="price d-flex align-items-end">
-                        <h2>795.00грн.</h2>
-                        <h3 class="">995.00грн.</h3>
+                        <div class="price d-flex align-items-end">
+                            <h2>795.00грн.</h2>
+                            <h3 class="">995.00грн.</h3>
+                        </div>
                     </div>
                     <div class="table">
                         <div class="d-flex">
@@ -74,19 +79,24 @@
                         <input id="phone" type="text" placeholder="+380">
                         <label for="phone">Номер телефона</label>
                         @@include('./components/button.html', { val: 'Быстрый заказ'})
+                        <div class="alt-button">@@include('./components/button.html', { val: '<img src="img/main/products/fly.svg" alt="">'})</div>
+
                     </form>
                     <div class="d-flex info">
                         <p class="p-info delivery">Доставка <img src="img/main/products/arrow-right.svg" alt=""></p>
-                        <p class="p-info about-tulip special">Описание <img src="img/main/products/arrow-right.svg" alt=""></p>
+                        <p class="p-info about-tulip special">Описание <img src="img/main/products/arrow-right.svg"
+                                                                            alt=""></p>
                         <p class="p-info response">Отзывы(12) <img src="img/main/products/arrow-right.svg" alt=""></p>
                     </div>
                     <div class="change-info">
-                        <p class="p-change delivery hide">Доставка - самомвывоз, доставка курьером по городу 300 грн. либо любой
+                        <p class="p-change delivery hide">Доставка - самомвывоз, доставка курьером по городу 300 грн.
+                            либо любой
                             транспортной команией за счет получателя Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Adipisci aliquid amet aperiam blanditiis, distinctio incidunt laboriosam sit vel. Ab
                             animi
                             ex harum impedit labore odit quisquam rerum similique totam voluptas?</p>
-                        <p class="p-change about-tulip">Тюльпан - символ любви, весеннего обновления, счастья, теплой и солнечной
+                        <p class="p-change about-tulip">Тюльпан - символ любви, весеннего обновления, счастья, теплой и
+                            солнечной
                             погоды и хорошего
                             приподнятого настроения! Тюльпан отличается элегантностью форм и изысканностью линий. Если
                             Вы подбираете букет цветов для близкого, дорогого человека, коллеге по работе, то, как
@@ -112,20 +122,46 @@
         </div>
         <div class="else">
             <h1 class="d-flex justify-content-center">Сопутствующие товары</h1>
-            <div class="row">
-                <div class="col col-3">@@include('./components/product-card.html')</div>
-                <div class="col col-3">@@include('./components/product-card.html')</div>
-                <div class="col col-3">@@include('./components/product-card.html')</div>
-                <div class="col col-3">@@include('./components/product-card.html')</div>
+            <div>
+                <div class="product-slider">
+                    <div class="my-card-slider">
+                        @@include('./components/product-card.html')
+                    </div>
+                    <div class="my-card-slider">
+                        @@include('./components/product-card.html')
+                    </div>
+                    <div class="my-card-slider">
+                        @@include('./components/product-card.html')
+                    </div>
+                    <div class="my-card-slider">
+                        @@include('./components/product-card.html')
+                    </div>
+                    <div class="my-card-slider">
+                        @@include('./components/product-card.html')
+                    </div>
+                </div>
             </div>
         </div>
         <div class="you-see">
             <h1 class="d-flex justify-content-center">Вы просматривали</h1>
-            <div class="row">
-                <div class="col col-3">@@include('./components/product-card.html')</div>
-                <div class="col col-3">@@include('./components/product-card.html')</div>
-                <div class="col col-3">@@include('./components/product-card.html')</div>
-                <div class="col col-3">@@include('./components/product-card.html')</div>
+            <div>
+                <div class="product-slider">
+                    <div class="my-card-slider">
+                        @@include('./components/product-card.html')
+                    </div>
+                    <div class="my-card-slider">
+                        @@include('./components/product-card.html')
+                    </div>
+                    <div class="my-card-slider">
+                        @@include('./components/product-card.html')
+                    </div>
+                    <div class="my-card-slider">
+                        @@include('./components/product-card.html')
+                    </div>
+                    <div class="my-card-slider">
+                        @@include('./components/product-card.html')
+                    </div>
+                </div>
             </div>
         </div>
         <div class="map d-flex justify-content-center">
