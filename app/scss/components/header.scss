@@ -1,14 +1,22 @@
 header {
-    .header-bottom {
+    .header-top {
+        flex: 0 0 auto;
+        background: $dark-bg;
         a {
             color: $text-white;
         }
-    }
-
-    .background-header {
-        flex: 0 0 auto;
-
-        background: $dark-bg;
+        select{
+            font-size: 0.9rem;
+            font-weight: 300;
+            background-color: $dark-bg;
+            border: none;
+            color: $text-violet;
+            max-width: 72px;
+            cursor: pointer;
+        }
+       .currency-block::before{
+           content: "";
+       }
     }
 
     .catalog-item {
