@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Presents</title>
-    <link href="css/style.css" rel="stylesheet">
+    @@include('./components/head.html', {title: 'presents'})
 </head>
 <body>
 @@include('./components/header.html')
 
+<main class="presents">
+    <div class="container">
+        @@include('./components/breadcrum.html')
+        <h1 class="d-flex justify-content-center">Подарок каждому клиенту</h1>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 bucket ">
+                Скидки <span class="text-white">-6%</span> на все букеты <span class="text-white">по предзаказу</span> на 8 марта
+            </div>
+            <div class="crystal col-lg-6 col-md-12">
+                Подкормка <span class="text-pink">Crystal Clear</span> продливает свежесть цветов <span class="text-pink">от 30 до 100%</span>
+                <div class="img">
+                    <img src="./img/main/presents/chocolate.png" alt="crystal">
+                </div>
+            </div>
+            <div class="cart col-lg-6 col-md-12">
+                <span class="text-pink">Фирменная</span> карточка
+                с Вашим <span class="text-pink">текстом</span>
+            </div>
+            <div class="rafaello col-lg-6 col-md-12">
+                При заказе цветов
+                <br>
+                <span class="text-pink"> в коробке</span>, конфеты
+                <br>
+                <span class="text-pink">Rafaello в подарок</span> к закзазу
+                <div class="img">
+                    <img src="./img/main/presents/box.png" alt="crystal">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
+<div class="container map">
+    @@include('./components/map.html')
+</div>
 @@include('./components/footer.html')
 <script src="js/script.js"></script>
 </body>
