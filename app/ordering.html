@@ -1,16 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>ordering</title>
-    <link href="../dist/css/style.css" rel="stylesheet">
-</head>
+@@include('./components/head.html',{
+title: 'Оформление заказа'
+})
 <body>
 @@include('./components/header.html')
 
+<main class="ordering">
+    <div class="container ordering_head">
+        @@include('./components/breadcrum.html')
+        <h1>Оформление заказа</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="recipient_contacts">
+                    <h2>1. Контакты получателя</h2>
+                    <div class="inputs_contacts">
+                        <div>@@include('./components/input.html',{
+                            type_value: 'text',
+                            name_value: 'name',
+                            label_val:'Имя получателя'
+                            })
+                        </div>
+                        <div>@@include('./components/input.html',{
+                            type_value: 'text',
+                            name_value: 'region',
+                            label_val:'Регион'
+                            })
+                        </div>
+                        <div>@@include('./components/input.html',{
+                            type_value: 'number',
+                            name_value: 'phone',
+                            label_val:'Телефон получателя'
+                            })
+                        </div>
+                        <div>@@include('./components/input.html',{
+                            type_value: 'text',
+                            name_value: 'address',
+                            label_val:'Адрес'
+                            })
+                        </div>
+                        <div>@@include('./components/input.html',{
+                            type_value: 'date',
+                            name_value: 'date',
+                            label_val:'Дата доставки'
+                            })
+                        </div>
+                        <div>@@include('./components/input.html',{
+                            type_value: 'time',
+                            name_value: 'time',
+                            label_val:'Время доставки'
+                            })
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="senders_contacts">
+                            <h2>2. Контакты отправителя</h2>
+                            <div class="inputs_contacts">
+                                <div>@@include('./components/input.html',{
+                                    type_value: 'text',
+                                    name_value: 'name',
+                                    label_val:'Имя'
+                                    })
+                                </div>
+                                <div>@@include('./components/input.html',{
+                                    type_value: 'number',
+                                    name_value: 'phone',
+                                    label_val:'Телефон получателя'
+                                    })
+                                </div>
+                                <div>@@include('./components/input.html',{
+                                    type_value: 'email',
+                                    name_value: 'email',
+                                    label_val:'Email'
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        @@include('./components/map.html')
+    </div>
+</main>
 
 @@include('./components/footer.html')
 <script src="js/script.js"></script>
 </body>
-</html>

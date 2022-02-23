@@ -1,0 +1,62 @@
+.ordering {
+    .ordering_head {
+        margin-top: 65px;
+        margin-bottom: 100px;
+        color: $dark-bg;
+
+        h1 {
+            font-family: 'MuseoSansCyrl-700', sans-serif;
+            //color: $dark-bg;
+            font-size: 3rem;
+            line-height: 3.5rem;
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+
+    input {
+        width: 100%;
+        padding-left: 35px !important;
+    }
+
+    label {
+        left: 35px !important;
+    }
+
+    h2 {
+        font-size: 1.111rem;
+        font-weight: 700;
+        line-height: 1.2rem;
+        margin-bottom: 50px;
+    }
+
+    .recipient_contacts {
+        color: $dark-bg;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        border: 1px solid #956d84;
+        padding: 44px 44px;
+
+        .inputs_contacts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 50px;
+        }
+    }
+
+    .senders_contacts {
+        color: $dark-bg;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        border: 1px solid #956d84;
+        padding: 44px 44px;
+
+        .inputs_contacts {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 50px;
+        }
+    }
+}
