@@ -6,7 +6,6 @@
 
         h1 {
             font-family: 'MuseoSansCyrl-700', sans-serif;
-            //color: $dark-bg;
             font-size: 3rem;
             line-height: 3.5rem;
             margin-top: 30px;
@@ -42,6 +41,25 @@
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 30px;
             grid-row-gap: 50px;
+
+            .time label {
+                top: -10px;
+                left: 60px;
+                padding: 0 10px;
+                font-size: 14px;
+                color: #bdbdbd;
+                background-color: #fff;
+            }
+
+            .date label {
+                top: -10px;
+                left: 60px;
+                padding: 0 10px;
+                font-size: 14px;
+                color: #bdbdbd;
+                background-color: #fff;
+            }
+
         }
     }
 
@@ -51,6 +69,7 @@
         margin-bottom: 20px;
         border: 1px solid #956d84;
         padding: 44px 44px;
+        min-height: 620px;
 
         .inputs_contacts {
             display: grid;
@@ -59,4 +78,159 @@
             grid-row-gap: 50px;
         }
     }
+
+    .delivery_details {
+        color: $dark-bg;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        border: 1px solid #956d84;
+        padding: 44px 44px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 15px;
+        min-height: 620px;
+
+        h2 {
+            margin-bottom: 35px;
+        }
+
+        .delivery_checkbox {
+            div:nth-last-child(-n+2) {
+                margin-left: 15px;
+
+                label {
+                    margin-left: 5px;
+                }
+            }
+
+            input {
+                width: auto;
+                margin-bottom: 24px;
+            }
+
+            label {
+                font-weight: 250;
+                font-size: 0.777rem;
+                line-height: 1rem;
+                color: #000000;
+                margin-left: 15px;
+                margin-bottom: 0;
+            }
+        }
+
+        form .group {
+            margin-bottom: 0;
+        }
+    }
+
+    .your_order_details {
+        color: $dark-bg;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        border: 1px solid #956d84;
+        padding: 44px;
+        min-height: 620px;
+
+        h3 {
+            font-weight: 900;
+            font-size: 2rem;
+            line-height: 2.1rem;
+            color: #956D84;
+            margin-bottom: 40px;
+        }
+
+        .your_order {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
+            margin-left: -20px;
+            margin-bottom: 40px;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .flower_order {
+                color: #BDBDBD;
+            }
+
+            .flower_sum {
+                text-align: center;
+            }
+        }
+
+        .order_sum {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
+            margin-left: -20px;
+            margin-bottom: 40px;
+        }
+
+        .order_sum_pay {
+            text-align: right;
+        }
+
+        .sum_pay {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
+            margin-left: -20px;
+            margin-bottom: 40px;
+
+            div:first-child {
+                font-size: 1.333rem;
+            }
+
+            div:last-child {
+                font-weight: 600;
+            }
+        }
+
+        .button {
+            width: 100%;
+            margin-left: -20px;
+        }
+
+    }
+
+    .button {
+        width: 100%;
+    }
 }
+
+@media (max-width: 679px) {
+    .recipient_contacts .inputs_contacts {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+
+@media (max-width: 979px) {
+    .senders_contacts {
+        min-height: auto !important;
+    }
+
+    .your_order, .order_sum, .sum_pay {
+        margin-left: 0 !important;
+    }
+    .your_order_details {
+        padding: 44px !important;
+    }
+
+    .button {
+        width: 50% !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+}
+
+@media (max-width: 1223px) {
+    .ordering .your_order_details {
+        padding: 44px 5px 44px 44px;
+    }
+}
+
