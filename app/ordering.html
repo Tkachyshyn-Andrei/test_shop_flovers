@@ -13,7 +13,7 @@ title: 'Оформление заказа'
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-8">
+            <div class="col-md-8">
                 <div class="recipient_contacts">
                     <h2>1. Контакты получателя</h2>
                     <div class="inputs_contacts">
@@ -56,7 +56,7 @@ title: 'Оформление заказа'
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="senders_contacts">
                             <h2>2. Контакты отправителя</h2>
                             <div class="inputs_contacts">
@@ -81,13 +81,102 @@ title: 'Оформление заказа'
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-
+                    <div class="col-md-6">
+                        <div class="delivery_details">
+                            <h2>3. Детали доставки</h2>
+                            <div class="delivery_checkbox">
+                                <div>
+                                    <input type="checkbox" id="checkbox1">
+                                    <label for="checkbox1">Доставка сюрпризом</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkbox2">
+                                    <label for="checkbox2">Фотоотчет (+ 15 грн)</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkbox3">
+                                    <label for="checkbox3">Добавить вазу (+ 249 грн)</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkbox4">
+                                    <label for="checkbox4">Напомнить о событии</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkbox5">
+                                    <label for="checkbox5">Открытка</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkbox6">
+                                    <label for="checkbox6">Визитка</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkbox7">
+                                    <label for="checkbox7">Полномасштабная (+79грн)</label>
+                                </div>
+                            </div>
+                            <div>@@include('./components/input.html',{
+                                type_value: 'text',
+                                name_value: 'reason',
+                                label_val:'Повод для открытки'
+                                })
+                            </div>
+                            <form>
+                                @@include('./components/textarea.html',{
+                                name_value: 'textarea',
+                                label_val:'Текст открытки'
+                                })
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-
+            <div class="col-md-4">
+                <div class="your_order_details">
+                    <h3>Ваш заказ</h3>
+                    <div class="your_order">
+                        <div class="flower_order"><p>25 желтых тюльпанов</p></div>
+                        <div class="flower_sum"><p>2</p></div>
+                        <div class="order_sum_pay"><p>5 558 ₴</p></div>
+                        <div class="flower_order"><p>25 розовых пионовидных роз</p></div>
+                        <div class="flower_sum"><p>1</p></div>
+                        <div class="order_sum_pay"><p>254 ₴</p></div>
+                        <div class="flower_order"><p>Мечтательница</p></div>
+                        <div class="flower_sum"><p>1</p></div>
+                        <div class="order_sum_pay"><p>254 ₴</p></div>
+                    </div>
+                    <div class="order_sum">
+                        <div><p>Сумма заказа</p></div>
+                        <div class="order_sum_pay"><p>6000 ₴</p></div>
+                        <div><p>Доставка</p></div>
+                        <div class="order_sum_pay"><p>100 ₴</p></div>
+                        <div><p>Фотоотчет</p></div>
+                        <div class="order_sum_pay"><p>15 ₴</p></div>
+                    </div>
+                    <div class="sum_pay">
+                        <div><p>Всего</p></div>
+                        <div class="order_sum_pay"><p>5 304 ₴</p></div>
+                    </div>
+                    @@include('./components/button.html',{
+                    val:'Оформить заказ'
+                    })
+                </div>
+                <div class="mb-3">@@include('./components/input.html',{
+                    type_value: 'text',
+                    name_value: 'reason',
+                    label_val:'Купон'
+                    })
+                </div>
+                <div class="mb-3">@@include('./components/input.html',{
+                    type_value: 'text',
+                    name_value: 'reason',
+                    label_val:'Подарочный сертификат'
+                    })
+                </div>
+                <div class="pr-3 pl-3 mb-3">
+                    @@include('./components/button.html',{
+                    val:'Применить'
+                    })
+                </div>
             </div>
         </div>
     </div>
