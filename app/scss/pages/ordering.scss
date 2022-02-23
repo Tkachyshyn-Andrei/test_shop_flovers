@@ -41,6 +41,25 @@
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 30px;
             grid-row-gap: 50px;
+
+            .time label {
+                top: -10px;
+                left: 60px;
+                padding: 0 10px;
+                font-size: 14px;
+                color: #bdbdbd;
+                background-color: #fff;
+            }
+
+            .date label {
+                top: -10px;
+                left: 60px;
+                padding: 0 10px;
+                font-size: 14px;
+                color: #bdbdbd;
+                background-color: #fff;
+            }
+
         }
     }
 
@@ -155,7 +174,7 @@
             text-align: right;
         }
 
-        .sum_pay{
+        .sum_pay {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 10px;
@@ -163,44 +182,46 @@
             margin-left: -20px;
             margin-bottom: 40px;
 
-            div:first-child{
+            div:first-child {
                 font-size: 1.333rem;
             }
-            div:last-child{
+
+            div:last-child {
                 font-weight: 600;
             }
         }
 
-        .button{
+        .button {
             width: 100%;
             margin-left: -20px;
         }
 
     }
-    .button{
+
+    .button {
         width: 100%;
     }
 }
 
-@media (max-width: 679px){
+@media (max-width: 679px) {
     .recipient_contacts .inputs_contacts {
         grid-template-columns: repeat(1, 1fr) !important;
     }
 }
 
 @media (max-width: 979px) {
-    .senders_contacts{
+    .senders_contacts {
         min-height: auto !important;
     }
 
-    .your_order, .order_sum, .sum_pay{
+    .your_order, .order_sum, .sum_pay {
         margin-left: 0 !important;
     }
-    .your_order_details{
+    .your_order_details {
         padding: 44px !important;
     }
 
-    .button{
+    .button {
         width: 50% !important;
         margin: 0 auto !important;
         display: block !important;
