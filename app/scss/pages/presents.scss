@@ -1,0 +1,222 @@
+.presents {
+    .breadcrumb {
+        margin-top: 65px;
+        margin-bottom: 48px;
+    }
+
+    h1 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2.667rem;
+        margin-bottom: 90px;
+        text-align: center;
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 57px;
+    }
+
+    .bucket, .crystal, .cart, .rafaello {
+        max-width: 692px;
+        max-height: 396px;
+        min-height: 271px;
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 3rem;
+        color: #333333;
+        gap: 22px;
+        margin-bottom: 22px;
+
+        .text-pink {
+            color: #956D84;
+        }
+    }
+
+    .bucket {
+        background: url("../img/main/presents/bucket.png") no-repeat;
+        background-size: 100% 100%;
+        padding: 76px 15px 200px 268px;
+    }
+
+    .crystal {
+        position: relative;
+        background: url("../img/main/presents/crystal.png");
+        padding: 127px 207px 127px 30px;
+        opacity: 0.5;
+
+        .img {
+            position: absolute;
+            top: 68px;
+            right: -60px;
+            z-index: -1;
+        }
+    }
+
+    .cart {
+        background: url("../img/main/presents/cart.png");
+        background-size: 100% 100%;
+        padding: 48px 247px 238px 33px;
+    }
+
+    .rafaello {
+        position: relative;
+        z-index: 2;
+        background: url("../img/main/presents/rafaello.png");
+        background-size: 100% 100%;
+        padding: 82px 194px 100px 31px;
+
+        .img {
+            position: absolute;
+            top: 70px;
+            right: 0px;
+            z-index: -1;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .presents {
+
+        .bucket {
+            padding: 76px 15px 200px 168px;
+        }
+
+        .crystal {
+            padding: 118px 207px 127px 30px;
+        }
+
+        .cart {
+            padding: 48px 247px 238px 33px;
+        }
+
+        .rafaello {
+            padding: 100px 294px 100px 31px;
+            .img {
+                top: 68px;
+                right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .presents {
+        .crystal {
+            .img {
+                top: 60px;
+                right: -50px;
+            }
+        }
+
+        .rafaello {
+            .img {
+                top: 38px;
+                right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .presents{
+        .rafaello {
+            .img {
+                top: 67px;
+                right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .presents {
+        .breadcrumb {
+            display: none;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            line-height: 2rem;
+            margin-top: 29px;
+            margin-bottom: 45px;
+        }
+
+        .bucket, .crystal, .cart, .rafaello {
+            font-size: 1.667rem;
+        }
+
+        .bucket {
+            padding: 25px 227px 136px 52px;
+        }
+
+        .crystal {
+            padding: 25px 70px 113px 52px;
+
+            .img {
+                max-width: 230px;
+                top: 60px;
+                right: -50px;
+            }
+        }
+
+        .cart {
+            padding: 25px 200px 138px 52px;
+        }
+
+        .rafaello {
+            padding: 25px 28px 125px 52px;
+
+            .img {
+                max-width: 175px;
+                top: 63px;
+                right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .presents {
+        .bucket, .crystal, .cart, .rafaello {
+            font-size: 1.4rem;
+        }
+
+        .bucket {
+            padding: 25px 17px 136px 48px;
+        }
+
+        .crystal {
+            padding: 14px 44px 113px 20px;
+        }
+
+        .cart {
+            padding: 20px 105px 138px 15px;
+        }
+
+        .rafaello {
+            padding: 36px 28px 125px 18px;
+
+            .img {
+                max-width: 170px;
+                top: 82px;
+                right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 359px){
+    .presents{
+
+        .rafaello{
+            padding: 36px 28px 125px 18px;
+            .img{
+                max-width: 170px;
+                top: 123px;
+                right: 0px;
+            }
+        }
+    }
+}

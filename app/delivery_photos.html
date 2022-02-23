@@ -6,8 +6,50 @@
 <body>
 @@include('./components/header.html')
 
+<main class="delivery-photos">
+    <div class="container">
+        @@include('./components/breadcrum.html')
+        <h1 class="d-flex justify-content-center">Фото доставок</h1>
+        <div class="delivery-photos-slider row">
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/delivery_photos/flowers.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/delivery_photos/flowers.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/delivery_photos/flowers.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/delivery_photos/flowers.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/delivery_photos/flowers.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider hide">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/delivery_photos/flowers.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider hide">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/delivery_photos/flowers.svg" alt="report">'})
+            </div>
+            <div class="my-card-slider hide">
+                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/delivery_photos/flowers.svg" alt="report">'})
+            </div>
+        </div>
+        <div class="hiden-button text-center">
+            @@include('./components/button.html',{
+            val:'Еще 16 новостей'
+            })
+        </div>
+        <div class="text-center">
+            @@include('./components/pagination.html')
+        </div>
+    </div>
+    <div class="container map">
+        @@include('./components/map.html')
+    </div>
+</main>
 
 @@include('./components/footer.html')
 <script src="js/script.js"></script>
 </body>
-

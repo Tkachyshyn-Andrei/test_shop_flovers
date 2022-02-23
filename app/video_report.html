@@ -10,7 +10,7 @@
     <div class="container">
         @@include('./components/breadcrum.html')
         <h1 class="d-flex justify-content-center">Видео отчеты</h1>
-        <div class="delivery-photos-slider">
+        <div class="delivery-photos-slider row">
             <div class="my-card-slider">
                 @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
             </div>
@@ -26,30 +26,23 @@
             <div class="my-card-slider">
                 @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
             </div>
-            <div class="my-card-slider">
+            <div class="my-card-slider hide">
                 @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
             </div>
-            <div class="my-card-slider">
+            <div class="my-card-slider hide">
                 @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
             </div>
-            <div class="my-card-slider">
+            <div class="my-card-slider hide">
                 @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
             </div>
-            <div class="my-card-slider">
-                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
-            </div>
-            <div class="my-card-slider">
-                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
-            </div>
-            <div class="my-card-slider">
-                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
-            </div>
-            <div class="my-card-slider">
-                @@include('./components/delivery-photos-card.html', {img: '<img src="img/main/video_report/video_report.svg" alt="report">'})
-            </div>
-
-
-
+        </div>
+        <div class="hiden-button text-center">
+            @@include('./components/button.html',{
+            val:'Еще 16 новостей'
+            })
+        </div>
+        <div class="text-center">
+            @@include('./components/pagination.html')
         </div>
     </div>
     <div class="container map">
