@@ -60,6 +60,10 @@
                 background-color: #fff;
             }
 
+            .date, .time {
+                color: #956D84;
+            }
+
         }
     }
 
@@ -96,14 +100,6 @@
         }
 
         .delivery_checkbox {
-            div:nth-last-child(-n+2) {
-                margin-left: 15px;
-
-                label {
-                    margin-left: 5px;
-                }
-            }
-
             input {
                 width: auto;
                 margin-bottom: 24px;
@@ -117,10 +113,23 @@
                 margin-left: 15px;
                 margin-bottom: 0;
             }
+
+            .reason{
+                width: 100%;
+            }
         }
 
         form .group {
             margin-bottom: 0;
+
+            label {
+                top: -10px;
+                left: 60px;
+                padding: 0 10px;
+                font-size: 14px;
+                color: #bdbdbd;
+                background-color: #fff;
+            }
         }
     }
 
@@ -129,7 +138,7 @@
         box-sizing: border-box;
         margin-bottom: 20px;
         border: 1px solid #956d84;
-        padding: 40px;
+        padding: 35px;
         min-height: 620px;
 
         h3 {
@@ -143,12 +152,12 @@
         .your_order {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-column-gap: 10px;
+            grid-column-gap: 2px;
             grid-row-gap: 20px;
             margin-bottom: 40px;
 
             p {
-                font-size: 0.888rem;
+                font-size: 16px;
                 margin-bottom: 0;
             }
 
@@ -164,7 +173,6 @@
         .order_sum {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 10px;
             grid-row-gap: 20px;
             margin-bottom: 40px;
         }
@@ -195,6 +203,17 @@
         height: 63px;
         margin: 0 auto;
         display: block;
+    }
+
+    .coupon, .gift_certificate {
+        label {
+            top: -10px;
+            left: 60px;
+            padding: 0 10px;
+            font-size: 14px;
+            color: #bdbdbd;
+            background-color: #fff;
+        }
     }
 }
 
