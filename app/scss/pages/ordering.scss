@@ -22,6 +22,16 @@
         left: 35px !important;
     }
 
+    textarea {
+        padding-left: 35px !important;
+    }
+
+    ::placeholder {
+        font-weight: 300;
+        font-size: 0.777rem;
+
+    }
+
     h2 {
         font-size: 1.111rem;
         font-weight: 700;
@@ -114,7 +124,7 @@
                 margin-bottom: 0;
             }
 
-            .reason{
+            .reason {
                 width: 100%;
             }
         }

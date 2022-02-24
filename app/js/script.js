@@ -541,3 +541,10 @@ $(function () {
         $(this).val("+380")
     });
 });
+
+document.getElementsByName('postcard_text')[0].placeholder = 'До 70 символов';
+document.getElementsByName('coupon_input')[0].placeholder = 'Введите код купона';
+document.getElementsByName('certificate_input')[0].placeholder = 'Введите номер подарочного сертификата';
+
+
+

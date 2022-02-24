@@ -126,6 +126,7 @@ title: 'Оформление заказа'
                             <form>
                                 @@include('./components/textarea.html',{
                                 name_value: 'textarea',
+                                name_value: 'postcard_text',
                                 label_val:'Текст открытки'
                                 })
                             </form>
@@ -165,13 +166,13 @@ title: 'Оформление заказа'
                 </div>
                 <div class="mb-3 coupon">@@include('./components/input.html',{
                     type_value: 'text',
-                    name_value: 'reason',
+                    name_value: 'coupon_input',
                     label_val:'Купон'
                     })
                 </div>
                 <div class="mb-3 gift_certificate">@@include('./components/input.html',{
                     type_value: 'text',
-                    name_value: 'reason',
+                    name_value: 'certificate_input',
                     label_val:'Подарочный сертификат'
                     })
                 </div>
