@@ -59,6 +59,13 @@ header {
         }
     }
 
+    .header-bottom {
+        a {
+            color: $dark-bg;
+            text-decoration: none;
+        }
+    }
+
     .header-bottom-mobile {
         display: none;
     }
