@@ -112,6 +112,10 @@ header {
                     background-color: #616161;
                 }
 
+                span {
+                    max-width: 25%;
+                }
+
                 span::before {
                     content: '';
                     top: -8px;
